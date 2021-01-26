@@ -1,0 +1,191 @@
+.container {
+    display: block;
+}
+
+
+.container .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.container .hero-section {
+    flex: 1;
+    position: relative;
+    margin-left: 260px;
+    background-color: #12212f;
+}
+
+
+
+#vision-and-purpose {
+    min-height: 100vh;
+    padding-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#vision-and-purpose h2, #leadership h2 {
+    color: #d2aa42;
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 6px;
+}
+
+.content-wrapper {
+    margin-top: 80px;
+}
+
+.content-wrapper h3 {
+    color: white;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.content-wrapper p {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+
+#leadership {
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#leadership-ceo-message {
+    min-height: 80vh;
+    padding-top: 46px;
+}
+
+#leadership h3 {
+    color: white;
+    font-size: 27px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+#leadership p {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+#leadership-board-of-directors {
+    min-height: 100vh;
+}
+
+.directors-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.director-wrapper {
+    width: 300px;
+    margin-right: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.director {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .2s ease-in;
+}
+
+.director > img {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.name-and-position-wrapper {
+    text-align: center;
+    margin-top: 30px;
+    min-height: 100px;
+}
+.name-and-position-wrapper span{
+    color: #d2aa42;
+    font-size: 18px;
+    font-style: italic;
+    transition: all .2s ease-in;
+}
+
+.name-and-position-wrapper .position{
+    font-style: italic;
+    transition: all .2s ease-in;
+}
+
+.director-description {
+    display: none;
+}
+
+.director-description p {
+    font-style: italic;
+}
+
+.visible {
+    display: block;
+    margin-top: 40px
+}
+
+.selected-director .director {
+    height: 220px;
+    width: 220px;
+}
+.selected-director span {
+    font-weight: bold !important;
+}
+
+.selected-director p {
+    font-weight: bold !important;
+}
+
+
+/* ---------------------RESPONSIVNESS-----------------------*/
+
+@media screen and (max-width: 1280px) {}
+
+
+@media screen and (max-width: 960px) {
+    #vision-and-purpose h2, #leadership h2 {
+        font-size: 46px;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .directors-wrapper {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .director {
+        margin-right: 40px;
+        height: 160px;
+        width: 160px;
+    }
+}

@@ -171,7 +171,7 @@ body {
     position: relative;
 }
 
-.container .hero-section img {
+.container .hero-section > img {
     position: relative;
     height: 100%;
     width: 100%;
@@ -318,7 +318,7 @@ body {
     width: 100%;
     margin-top: 0px;
   }
-  .container .hero-section img {
+  .container .hero-section > img {
     object-fit: cover;
   }
 }
@@ -326,6 +326,9 @@ body {
 @media screen and (max-width: 960px) {
   .container .menu {
     display: none;
+  }
+  .container .hero-section {
+    margin-left: 0px !important;
   }
   .container {
     flex-direction: column;
@@ -335,8 +338,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #12212f;
   }
 
@@ -344,7 +347,7 @@ body {
     width: 90px;
   }
 
-  .container .hero-section img {
+  .container .hero-section > img {
     position: relative;
     width: 100%;
     object-fit: cover;
@@ -369,7 +372,7 @@ body {
   #menuToggle {
   display: block;
   position: absolute;
-  top: 70px;
+  top: 50px;
   left: 26px;
   z-index: 1;
   -webkit-user-select: none;
