@@ -13,10 +13,11 @@ var myobj = (function() {
 
 function manageVisibility(selectedAvatar) {
     const value = myobj.get_selected();
+    const a = myobj.get_elemId()+'-description';
     // remove visibility from previous paragraph
-    if(myobj.get_elemId() !== '' && myobj.get_elemId() !== value+'-description') {
-        document.getElementById(myobj.get_elemId()).classList.remove('visible');
-        selectedAvatar.classList.remove('selected-director');
+    if(!a.startsWith('-') && a !== value+'-description') {
+        document.getElementById(a).classList.remove('visible');
+        document.getElementById(myobj.get_elemId()).classList.remove('selected-director');
     }
     if(document.getElementById(value+'-description').classList.length == 4) {
         document.getElementById(value+'-description').classList.remove('visible');
@@ -24,7 +25,7 @@ function manageVisibility(selectedAvatar) {
     } else {
         document.getElementById(value+'-description').classList.add('visible');
         selectedAvatar.classList.add('selected-director');
-        myobj.set_elemId(value+'-description');
+        myobj.set_elemId(value);
     }
 }
 
