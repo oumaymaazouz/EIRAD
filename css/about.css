@@ -19,7 +19,6 @@
 
 
 #vision-and-purpose {
-    min-height: 100vh;
     padding-top: 80px;
     margin-left: 40px;
     margin-right: 40px;
@@ -57,10 +56,10 @@
 
 
 #leadership {
-    min-height: 100vh;
     padding-top: 80px;
     margin-left: 40px;
     margin-right: 40px;
+    padding-bottom: 40px;
 }
 
 #leadership-ceo-message {
@@ -85,8 +84,12 @@
     padding-bottom: 2em;
 }
 
-#leadership-board-of-directors {
-    min-height: 100vh;
+#leadership-ceo-message p{
+    font-style: italic;
+}
+
+.ceo-name {
+    color: #d2aa42;
 }
 
 .directors-wrapper {
@@ -146,7 +149,6 @@
 
 .visible {
     display: block;
-    margin-top: 40px;
     width: 60%;
 }
 
