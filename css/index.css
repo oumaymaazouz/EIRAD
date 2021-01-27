@@ -206,7 +206,7 @@ body {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: rgb(0 0 0 / 50%);
+    background-color: rgb(0 0 0 / 62%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,6 +333,7 @@ body {
   .container {
     flex-direction: column;
   }
+
   .container header {
     display: flex;
     flex-direction: column;
@@ -341,6 +342,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #12212f;
+}
   }
 
   .container header img {
@@ -371,12 +373,17 @@ body {
   /******************MENU HUMBURGER*********************/
   #menuToggle {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 50px;
-  left: 26px;
+  left: 20px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+
+ 
+}
+
+
 }
 
 #menuToggle a
@@ -423,7 +430,8 @@ font-size: 14px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #ffffff;
+  background: #d2aa42;
+
   border-radius: 0px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -504,6 +512,10 @@ font-size: 14px;
   padding: 6px 0;
   font-size: 16px;
 }
+#menu li a {
+  text-decoration: none;
+  color: white;
+}
 
 /*
  * And let's slide it in from the left
@@ -527,7 +539,7 @@ font-size: 14px;
   color: #ffffff;
   font-weight: normal;
 }
-}
+
 
 @media screen and (max-width: 480px) {
   #menu {
@@ -536,10 +548,12 @@ font-size: 14px;
     width: 100%;
   }
   .area-with-text-content {
-    margin-top: 0px;
+    margin-top: 10px;
   }
   .container .hero-section .website-title {
     padding: 0;
+    padding-left: 0 !important;
+    padding-top: 0 !important;
   }
   .container .hero-section .website-title h1 {
     font-size: 30px;
@@ -552,6 +566,8 @@ font-size: 14px;
   #menu {
     margin: -100px 0 0 -76px;
   }
+
+
 }
 
 /* ---------------------ANIMATION SHINE---------------------- */

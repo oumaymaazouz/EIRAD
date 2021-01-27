@@ -59,8 +59,8 @@
 #leadership {
     min-height: 100vh;
     padding-top: 80px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 #leadership-ceo-message {
@@ -82,7 +82,7 @@
     line-height: 25px;
     font-weight: normal;
     margin-top: 0.5em;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 
 #leadership-board-of-directors {
@@ -146,7 +146,8 @@
 
 .visible {
     display: block;
-    margin-top: 40px
+    margin-top: 40px;
+    width: 60%;
 }
 
 .selected-director {
@@ -161,9 +162,20 @@
 
 
 @media screen and (max-width: 960px) {
+    #vision-and-purpose {
+        padding-top: 147px !important;
+    }
     #vision-and-purpose h2, #leadership h2 {
         font-size: 46px;
         text-transform: uppercase;
+    }
+    .visible {
+        width: 100%;
+    }
+    .container header {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
     }
 }
 
@@ -175,8 +187,51 @@
 
 @media screen and (max-width: 480px) {
     .director {
-        margin-right: 40px;
         height: 160px;
         width: 160px;
+    }
+    #vision-and-purpose, #leadership  {
+        padding-top: 20px;
+        margin-left: 26px;
+        margin-right: 26px; 
+    }
+
+    
+
+    #vision-and-purpose h2, #leadership h2 {
+        font-size: 26px;
+    }
+
+    .content-wrapper {
+        margin-top: 20px;
+    }
+
+    .content-wrapper h3, #leadership h3 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .content-wrapper p, #leadership-ceo-message p {
+        font-size: 14px;
+    }
+    #leadership-ceo-message {
+        padding-top: 20px;
+    }
+    .director-wrapper {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .name-and-position-wrapper span {
+        font-size: 16px;
+    }
+
+    .name-and-position-wrapper p.position {
+        margin-bottom: 1em !important;
+        font-size: 14px !important;
+    }
+    .visible {
+        margin-top: 20px;
+        width: 100%;
     }
 }
