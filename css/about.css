@@ -236,4 +236,13 @@
         margin-top: 20px;
         width: 100%;
     }
+    .menu-bottom {
+        margin-bottom: 130px;
+    }
+    .menu-bottom p {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+    }
 }
