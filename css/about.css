@@ -13,39 +13,59 @@
     flex: 1;
     position: relative;
     margin-left: 260px;
-    background-color: #12212f;
+    /* background-color: #12212f; */
 }
 
 
 
 #vision-and-purpose {
     padding-top: 80px;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #12212f;
 }
 
-#vision-and-purpose h2, #leadership h2 {
-    color: #d2aa42;
+#vision-and-purpose h2, .leadership-section h2 {
+    color: #ffffff;
     font-size: 60px;
     margin: 0;
     letter-spacing: 6px;
 }
 
-.content-wrapper {
-    margin-top: 80px;
+#leadership-ceo-message {
+    margin-top: 40px;
+}
+#leadership h2, #leadership-ceo-message {
+    padding-left: 40px;
 }
 
-.content-wrapper h3 {
+
+.leadership-section h2 {
     color: white;
+}
+.content-wrapper {
+    width: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.content-wrapper > div { margin-top: 40px; }
+
+.content-wrapper h3 {
+    color: #ffffff;
     font-weight: normal;
     font-size: 24px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
+    font-weight: bold;
 }
 
 .content-wrapper p {
-    color: white;
+    color: #ffffff;
     font-size: 16px;
     letter-spacing: 2px;
     line-height: 25px;
@@ -55,26 +75,33 @@
 }
 
 
-#leadership {
+.leadership-section {
     padding-top: 80px;
-    margin-left: 40px;
     margin-right: 40px;
     padding-bottom: 40px;
 }
 
-#leadership-ceo-message {
+
+.leadership-section-ceo-message {
     min-height: 80vh;
     padding-top: 46px;
 }
 
-#leadership h3 {
+.leadership-section h3 {
     color: white;
     font-size: 27px;
-    font-weight: normal;
-    letter-spacing: 3px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#leadership-board-of-directors {
+    padding-left: 40px;
+    background-color: #12212f;
+}
+#leadership-board-of-directors h3, #leadership-board-of-directors p{
+    color: #ffffff;
 }
 
-#leadership p {
+.leadership-section p {
     color: white;
     font-size: 16px;
     letter-spacing: 2px;
@@ -84,8 +111,8 @@
     padding-bottom: 2em;
 }
 
-#leadership-ceo-message p{
-    font-style: italic;
+.leadership-section-ceo-message p{
+    width: 80%;
 }
 
 .ceo-name {
@@ -128,11 +155,20 @@
     text-align: center;
     margin-top: 30px;
     min-height: 100px;
+    padding: 0px 26px;
 }
 .name-and-position-wrapper span{
-    color: #d2aa42;
-    font-size: 18px;
-    font-style: italic;
+    color: #ffffff;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 25px;
+}
+
+.name-and-position-wrapper .position {
+    font-size: 14px !important;
+    color: #ffffff;
+    font-style: normal !important;
+    letter-spacing: 0 !important;
 }
 
 .name-and-position-wrapper .position{
@@ -145,6 +181,7 @@
 
 .director-description p {
     font-style: italic;
+    padding-top: 30px;
 }
 
 .visible {
@@ -156,8 +193,20 @@
     transform: scale(1.1);
 }
 
+.team-desc {
+    margin-top: 80px;
+}
+.team-desc h3 {
+    font-size: 23px;
+}
+.team-desc p {
+    margin-top: 0.5em;
+    padding-bottom: 0px !important;
+}
 
-
+.team-desc > div {
+    margin-top: 40px; 
+}
 /* ---------------------RESPONSIVNESS-----------------------*/
 
 @media screen and (max-width: 1280px) {}
@@ -167,7 +216,7 @@
     #vision-and-purpose {
         padding-top: 147px !important;
     }
-    #vision-and-purpose h2, #leadership h2 {
+    #vision-and-purpose h2, .leadership-section h2 {
         font-size: 46px;
         text-transform: uppercase;
     }
@@ -192,7 +241,7 @@
         height: 160px;
         width: 160px;
     }
-    #vision-and-purpose, #leadership  {
+    #vision-and-purpose, .leadership-section  {
         padding-top: 20px;
         margin-left: 26px;
         margin-right: 26px; 
@@ -200,7 +249,7 @@
 
     
 
-    #vision-and-purpose h2, #leadership h2 {
+    #vision-and-purpose h2, .leadership-section h2 {
         font-size: 26px;
     }
 
@@ -208,15 +257,15 @@
         margin-top: 20px;
     }
 
-    .content-wrapper h3, #leadership h3 {
+    .content-wrapper h3, .leadership-section h3 {
         font-size: 20px;
         margin-top: 0;
     }
 
-    .content-wrapper p, #leadership-ceo-message p {
+    .content-wrapper p, .leadership-section-ceo-message p {
         font-size: 14px;
     }
-    #leadership-ceo-message {
+    .leadership-section-ceo-message {
         padding-top: 20px;
     }
     .director-wrapper {
@@ -246,3 +295,4 @@
         margin-top: 10px;
     }
 }
+
