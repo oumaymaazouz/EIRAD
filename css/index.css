@@ -171,6 +171,7 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 /* --------------------------------HERO SECTION----------------------------------- */
@@ -187,8 +188,10 @@ body {
 }
 
 .container .hero-section .website-title {
-  padding-top: 30px;
+  padding-top: 80px;
+  padding-left: 40px;
 }
+
 
 .container .hero-section .website-title h1 {
   color: #ffffff;
@@ -207,6 +210,7 @@ body {
     font-size: 18px;
     color: #ffffff;
     letter-spacing: 2px;
+    margin-top: 30px;
 }
 
 .area-with-text-overlay {
@@ -220,8 +224,6 @@ body {
 
 .area-with-text-content {
   width: 80%;
-  margin-top: 50px;
-  margin-left: 40px;
 }
 
 .container header {
@@ -305,6 +307,10 @@ body {
   font-size: 30px;
 }
 
+.custom-card {
+  padding-left: 40px;
+  padding-right: 40px ;
+}
 
 /* ---------------------RESPONSIVNESS-----------------------*/
 
@@ -312,13 +318,6 @@ body {
   .area-with-text-overlay {
     width: 100%;
     padding: 0;
-  }
-  .container .hero-section .website-title {
-    padding-left: 30px;
-  }
-  .custom-card {
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .area-with-text-content {
@@ -353,9 +352,11 @@ body {
 
   .area-with-text-content {
     margin-top: 20px;
-    text-align: center;
+
   }
 
+
+}
   /*
  * Make this absolute positioned
  * at the top left of the screen
@@ -565,6 +566,21 @@ font-size: 14px;
   font-weight: normal;
 }
 
+@media screen and (max-width: 600px) {
+  .container .hero-section .website-title {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .container .hero-section .website-title h1 {
+    font-size: 44px;
+  }
+
+  .custom-card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 
 @media screen and (max-width: 480px) {
 
@@ -580,7 +596,7 @@ font-size: 14px;
     font-size: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 16px;
+    margin-top: 40px;
     margin-bottom: 14px;
   }
 
