@@ -231,6 +231,27 @@
         z-index: 100;
         width: 100%;
     }
+
+    .content-wrapper {
+        width: 100%;
+    }
+    #vision-and-purpose {
+        padding-left: 20px;
+    }
+    #leadership-ceo-message {
+        width: 100%;
+    }
+    #leadership h2, #leadership-ceo-message {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #leadership-board-of-directors {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .team-desc p {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 935px) {
@@ -246,8 +267,6 @@
     }
     #vision-and-purpose, .leadership-section  {
         padding-top: 20px;
-        margin-left: 26px;
-        margin-right: 26px; 
     }
 
     
@@ -296,6 +315,9 @@
         text-align: center;
         margin: auto;
         margin-top: 10px;
+    }
+    .content-wrapper p, .leadership-section-ceo-message p {
+        padding-right: 20px;
     }
 }
 
