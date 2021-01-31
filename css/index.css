@@ -12,6 +12,15 @@
 }
 
 
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Verdana', serif;
@@ -194,7 +203,7 @@ body {
 }
 
 
-.custom-card {
+.custom-card p {
     font-size: 18px;
     color: #ffffff;
     letter-spacing: 2px;
@@ -207,14 +216,12 @@ body {
     height: 100vh;
     width: 100%;
     background-color: rgb(0 0 0 / 62%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .area-with-text-content {
-  width: 70%;
-  margin-top: 200px;
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 40px;
 }
 
 .container header {
@@ -348,7 +355,50 @@ body {
     margin-top: 20px;
     text-align: center;
   }
+
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: fixed;
+  width: 180px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #12212f;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  #menu {
+    margin: -77px 0 0 -20px !important;
+  }
+  #menu {
+    position: fixed !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  #menu li
+{
+  padding: 6px 0;
+  font-size: 16px;
+  margin-top: 20px;
+}
   
+  #menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
   }
 
   .container header img {
@@ -362,8 +412,9 @@ body {
     height: 100%;
   }
  
-  .custom-card {
+  .custom-card p {
     font-size: 18px;
+    margin-top: 40px;
   }
 
   .area-with-text-overlay {
@@ -387,7 +438,6 @@ body {
 }
 
 
-}
 
 #menuToggle a
 {
@@ -481,28 +531,7 @@ font-size: 14px;
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: fixed;
-  width: 180px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background-color: #12212f;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .menu-top ul {
   list-style: none;
@@ -510,15 +539,8 @@ font-size: 14px;
   padding: 0;
 }
 
-#menu li
-{
-  padding: 6px 0;
-  font-size: 16px;
-}
-#menu li a {
-  text-decoration: none;
-  color: white;
-}
+
+
 
 /*
  * And let's slide it in from the left
@@ -545,11 +567,7 @@ font-size: 14px;
 
 
 @media screen and (max-width: 480px) {
-  #menu {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-  }
+
   .area-with-text-content {
     margin-top: 10px;
   }
@@ -566,11 +584,16 @@ font-size: 14px;
     margin-bottom: 14px;
   }
 
-  #menu {
-    margin: -100px 0 0 -76px;
-  }
 
+  .menu-bottom p {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
 
+.custom-card p {
+  font-size: 14px;
+}
 }
 
 /* ---------------------ANIMATION SHINE---------------------- */
