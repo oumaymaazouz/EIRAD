@@ -1,0 +1,29 @@
+.hero-section-contact {
+    flex: 1;
+    background-image: url(/images/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.inner-contact-section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 80px 40px;
+}
+
+.inner-contact-section h2 {
+
+    color: #ffffff;
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 26px;
+    color: white;
+}
