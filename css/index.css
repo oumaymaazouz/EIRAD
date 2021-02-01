@@ -179,6 +179,10 @@ body {
 .container .hero-section {
     flex: 1;
     position: relative;
+    background-image: url('/images/homepage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container .hero-section > img {
@@ -210,7 +214,7 @@ body {
     font-size: 18px;
     color: #ffffff;
     letter-spacing: 2px;
-    margin-top: 30px;
+    margin-top: 26px;
 }
 
 .area-with-text-overlay {
@@ -226,7 +230,7 @@ body {
   width: 80%;
 }
 
-.container header {
+.header-mobile {
   display: none;
 }
 
@@ -310,7 +314,136 @@ body {
 .custom-card {
   padding-left: 40px;
   padding-right: 40px ;
+  margin-top: 80px;
 }
+
+
+
+
+/*******************************HUMBURGER//*********************************/
+.hamburger {
+  margin: 0;
+  padding: 0;
+  float: left;
+  transition: opacity .3s;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.hamburger .line {
+  width: 40px;
+  height: 4px;
+  background: #8a6701;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* .container header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #12212f;
+} */
+
+.header-mobile {
+  flex-direction: row;
+  padding: 10px 40px;
+  background-color: #12212f;
+}
+
+.header-mobile-left {
+  position: relative;
+  width: 33.33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-mobile-center {
+  position: relative;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-mobile-right {
+  position: relative;
+  width: 33.33%;
+}
+
+.hamburger.isMenuActive {
+  z-index: 300;
+}
+
+.hamburger.isMenuActive .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.isMenuActive .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+  background: #ffffff;
+}
+
+.hamburger.isMenuActive .line:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+  background: #ffffff;
+}
+
+.mobile-menu-overlay {
+  background-color: #12212f;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  display: none;
+  overflow-y: hidden;
+}
+.mobile-menu-overlay.isMenuOverlayActive {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.inner-mobile-menu-overlay {
+  position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-mobile-menu-overlay li
+{
+  padding: 6px 0;
+  font-size: 16px;
+  margin-top: 20px;
+}
+  
+
+.inner-mobile-menu-overlay  li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/****************************************************************/
 
 /* ---------------------RESPONSIVNESS-----------------------*/
 
@@ -340,23 +473,17 @@ body {
     flex-direction: column;
   }
 
-  .container header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #12212f;
-  }
-
   .area-with-text-content {
     margin-top: 20px;
 
   }
-
+  .header-mobile {
+    display: flex;
+  }
 
 }
+
+
   /*
  * Make this absolute positioned
  * at the top left of the screen
@@ -389,18 +516,7 @@ body {
     width: 100% !important;
   }
 
-  #menu li
-{
-  padding: 6px 0;
-  font-size: 16px;
-  margin-top: 20px;
-}
-  
-  #menu li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-  }
+
 
   .container header img {
     width: 90px;
@@ -413,10 +529,7 @@ body {
     height: 100%;
   }
  
-  .custom-card p {
-    font-size: 18px;
-    margin-top: 40px;
-  }
+
 
   .area-with-text-overlay {
     height: 100%;
@@ -579,6 +692,12 @@ font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;
   }
+  .header-mobile {
+    padding: 10px 20px;
+  }
+  .custom-card {
+    margin-top: 40px;
+  }
 }
 
 
@@ -594,8 +713,8 @@ font-size: 14px;
   }
   .container .hero-section .website-title h1 {
     font-size: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 40px;
     margin-bottom: 14px;
   }
@@ -607,8 +726,13 @@ font-size: 14px;
     margin-top: 10px;
 }
 
+.custom-card {
+  margin-top: 20px;
+}
+
 .custom-card p {
   font-size: 14px;
+  margin-top: 14px;
 }
 }
 
