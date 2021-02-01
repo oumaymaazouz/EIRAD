@@ -216,9 +216,6 @@
 
 
 @media screen and (max-width: 960px) {
-    #vision-and-purpose {
-        padding-top: 147px !important;
-    }
     #vision-and-purpose h2, .leadership-section h2 {
         font-size: 46px;
         text-transform: uppercase;
@@ -226,28 +223,23 @@
     .visible {
         width: 100%;
     }
-    .container header {
-        position: fixed;
-        z-index: 100;
-        width: 100%;
-    }
 
     .content-wrapper {
         width: 100%;
     }
     #vision-and-purpose {
-        padding-left: 20px;
+        padding-left: 40px;
     }
     #leadership-ceo-message {
         width: 100%;
     }
     #leadership h2, #leadership-ceo-message {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     #leadership-board-of-directors {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .team-desc p {
         width: 100%;
@@ -309,6 +301,19 @@
     }
 
     .content-wrapper p, .leadership-section-ceo-message p {
+        padding-right: 20px;
+    }
+
+    #vision-and-purpose {
+        padding-left: 20px;
+    }
+
+    #leadership h2, #leadership-ceo-message {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #leadership-board-of-directors {
+        padding-left: 20px;
         padding-right: 20px;
     }
 }
