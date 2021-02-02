@@ -19,7 +19,7 @@
 
 
 #vision-and-purpose {
-    padding-top: 80px;
+    padding-top: 160px;
     padding-left: 40px;
     display: flex;
     flex-direction: column;
@@ -33,17 +33,16 @@
     letter-spacing: 6px;
 }
 
-#leadership-ceo-message {
+.ceo-message {
     margin-top: 40px;
     width: 80%;
-}
-#leadership h2, #leadership-ceo-message {
     padding-left: 40px;
 }
 
 
 .leadership-section h2 {
     color: white;
+    margin-bottom: 60px;
 }
 .content-wrapper {
     width: 80%;
@@ -77,7 +76,7 @@
 
 
 .leadership-section {
-    padding-top: 80px;
+    padding-top: 20px;
     margin-right: 40px;
     padding-bottom: 40px;
 }
@@ -94,11 +93,12 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
-#leadership-board-of-directors {
+#board-of-directors {
     padding-left: 40px;
     background-color: #12212f;
+    padding-top: 80px;
 }
-#leadership-board-of-directors h3, #leadership-board-of-directors p{
+#board-of-directors h3, #board-of-directors p{
     color: #ffffff;
 }
 
@@ -197,6 +197,7 @@
 
 .team-desc {
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 .team-desc h3 {
     font-size: 23px;
@@ -229,21 +230,26 @@
     }
     #vision-and-purpose {
         padding-left: 40px;
-    }
-    #leadership-ceo-message {
-        width: 100%;
-    }
-    #leadership h2, #leadership-ceo-message {
-        padding-left: 40px;
         padding-right: 40px;
     }
-    #leadership-board-of-directors {
+    #ceo-message {
+        width: 100%;
+    }
+    .leadership-section h2, .ceo-message {
+        padding-right: 40px;
+    }
+    #board-of-directors {
         padding-left: 40px;
         padding-right: 40px;
     }
     .team-desc p {
         width: 100%;
     }
+
+
+  .ceo-message {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 935px) {
@@ -308,13 +314,16 @@
         padding-left: 20px;
     }
 
-    #leadership h2, #leadership-ceo-message {
+    .leadership-section h2, .ceo-message {
+        padding-right: 20px;
+    }
+    #board-of-directors {
         padding-left: 20px;
         padding-right: 20px;
     }
-    #leadership-board-of-directors {
+
+    .ceo-message {
         padding-left: 20px;
-        padding-right: 20px;
     }
 }
 

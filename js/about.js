@@ -55,4 +55,9 @@ vp_business_dev.addEventListener('click', function() {
 });
 
 
-
+function closeMobileMenu() {
+    let hamburger = document.querySelector('.hamburger');
+    let menuOverlay = document.querySelector('.mobile-menu-overlay');
+    hamburger.classList.remove('isMenuActive');
+    menuOverlay.classList.remove('isMenuOverlayActive');  
+}

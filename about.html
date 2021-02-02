@@ -25,16 +25,12 @@
                 <ul class="menu-list">
                     <li class="menu-list-item"><a href="/">Home</a></li>
                     <li class="menu-list-item" id="menu-item-about">
-                        <a  href="/about.html">About</a>
+                        <span>About</span>
                         <ul class="sub-menu-list" id="sub-menu-list-about">
                             <li class="menu-item sub-menu-list-item"><a href="/about.html#vision-and-purpose">Vision and Purpose</a></li>
-                            <li class="menu-item sub-menu-list-item" id="menu-item-leadership">
-                                <a href="/about.html#leadership">Leadership</a>
-                                <ul class="sub-menu-list">
-                                    <li class="menu-item sub-menu-list-item"><a href="/about.html#leadership-ceo-message">CEO Message</a></li>
-                                    <li class="menu-item sub-menu-list-item"><a href="/about.html#leadership-board-of-directors">Board of directors</a></li>
-                                </ul>
-                            </li>
+                            <li class="menu-item sub-menu-list-item"><a href="/about.html#ceo-message">CEO Message</a></li>
+                            <li class="menu-item sub-menu-list-item"><a href="/about.html#board-of-directors">Board of directors</a></li>
+                            <li class="menu-item sub-menu-list-item" id="menu-item-leadership"><a href="/about.html#leadership">Leadership</a></li>
                         </ul>
                     </li>
                     <li class="menu-list-item"><a href="/partnership.html">Partnership</a></li>
@@ -77,17 +73,13 @@
                 <div class="menu-top">
                     <ul class="menu-list">
                         <li class="menu-list-item"><a href="/">Home</a></li>
-                        <li class="menu-list-item" id="menu-item-about">
-                            <a  href="/about.html">About</a>
+                        <li class="menu-list-item" id="menu-item-about-for-mobile">
+                            <span>About</span>
                             <ul class="sub-menu-list" id="sub-menu-list-about-for-mobile">
-                                <li class="menu-item sub-menu-list-item"><a href="/about.html#vision-and-purpose">Vision and Purpose</a></li>
-                                <li class="menu-item sub-menu-list-item" id="menu-item-leadership-for-mobile">
-                                    <a href="/about.html#leadership">Leadership</a>
-                                    <ul class="sub-menu-list">
-                                        <li class="menu-item sub-menu-list-item"><a href="/about.html#leadership-ceo-message">CEO Message</a></li>
-                                        <li class="menu-item sub-menu-list-item"><a href="/about.html#leadership-board-of-directors">Board of directors</a></li>
-                                    </ul>
-                                </li>
+                                <li class="menu-item sub-menu-list-item"><a onclick="closeMobileMenu()" href="/about.html#vision-and-purpose">Vision and Purpose</a></li>
+                                <li class="menu-item sub-menu-list-item"><a onclick="closeMobileMenu()" href="/about.html#ceo-message">CEO Message</a></li>
+                                <li class="menu-item sub-menu-list-item"><a onclick="closeMobileMenu()" href="/about.html#board-of-directors">Board of directors</a></li>
+                                <li class="menu-item sub-menu-list-item" id="menu-item-leadership"><a onclick="closeMobileMenu()" href="/about.html#leadership">Leadership</a></li>
                             </ul>
                         </li>
                         <li class="menu-list-item"><a href="/partnership.html">Partnership</a></li>
@@ -132,10 +124,9 @@
                     </div>
                 </div>  
             </section>
-            <section class="section2 leadership-section" id="leadership">    
-                <h2>Leadership</h2>
-                <div id="leadership-ceo-message">
-                    <h3>CEO MESSAGE</h3>
+            <section class="section2 leadership-section" id="ceo-message">    
+                <div class="ceo-message">
+                    <h2>CEO MESSAGE</h2>
                     <p>
                         “One of the underlying keys to our success has always been that we value the success of partners and customers above all, and the service quality and excellence has always been in the DNA of our structure. We genuinely believe that “giving back” should be one of the most important components of our business endeavor.
                     </p>
@@ -157,8 +148,8 @@
                     </p>
                     </div>    
             </section>
-            <section class="section1 leadership-section" id="leadership-board-of-directors">            
-                <h3>BOARD OF DIRECTORS</h3>
+            <section class="section1 leadership-section" id="board-of-directors">            
+                <h2>BOARD OF DIRECTORS</h2>
                 <div>
                     <p>Our structure is set on a solid foundation of integrity and an ethical business code of conduct.</p>
                 </div>
@@ -219,7 +210,8 @@
                     <p>* Saud holds a bachelor's degree from King Fahd University of Petroleum and Minerals, and a master's degree in business administration from City University in Britain.</p>
                 </div>
 
-                <div class="team-desc">
+                <div class="team-desc" id="leadership">
+                    <h2>Leadership</h2>
                     <div>
                         <h3>Our Corporate System</h3>
                         <p>Our management team has an excellent knowledge of current and pre-requisites to do business in Saudi Arabia particularly when it comes to dealing with multinational businesses.  The willingness to adjust to a different environment and launch innovative ideas to make our business more competitive. Eirad Group Management is flexible in their approach to various conditions and can extend that unique managerial style to capitalize on its gains in the marketplace.</p>
