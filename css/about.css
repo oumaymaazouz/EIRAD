@@ -19,7 +19,7 @@
 
 
 #vision-and-purpose {
-    padding-top: 160px;
+    padding-top: 80px;
     padding-left: 40px;
     display: flex;
     flex-direction: column;
@@ -246,10 +246,13 @@
         width: 100%;
     }
 
+    .ceo-message {
+        width: 100%;
+    }
 
-  .ceo-message {
-    width: 100%;
-  }
+    #vision-and-purpose {
+        padding-top: 160px;
+    }
 }
 
 @media screen and (max-width: 935px) {
@@ -259,15 +262,20 @@
 }
 
 @media screen and (max-width: 480px) {
+    .leadership-section h2 {
+        margin-bottom: 20px;
+    }
     .director {
         height: 160px;
         width: 160px;
     }
-    #vision-and-purpose, .leadership-section  {
+    .leadership-section  {
         padding-top: 20px;
     }
 
-    
+    #vision-and-purpose {
+        padding-top: 130px;
+    }
 
     #vision-and-purpose h2, .leadership-section h2 {
         font-size: 26px;
@@ -325,5 +333,6 @@
     .ceo-message {
         padding-left: 20px;
     }
+
 }
 

@@ -210,7 +210,8 @@ color: #d29c01;
 .custom-card p {
     font-size: 18px;
     color: #ffffff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 24px;
     margin-top: 26px;
 }
 
@@ -421,7 +422,7 @@ color: #d29c01;
   position: relative;
     height: 100%;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 40px;
@@ -490,6 +491,12 @@ color: #d29c01;
     display: flex;
   }
 
+  .container .hero-section .website-title {
+    padding-top: 130px;
+  }
+  .custom-card {
+    margin-top: 40px;
+}
 }
 
 

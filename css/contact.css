@@ -27,3 +27,11 @@ p {
     font-size: 26px;
     color: white;
 }
+
+
+
+@media screen and (max-width: 960px) {
+    .inner-contact-section {
+        padding-top: 130px;
+    }
+}
