@@ -87,13 +87,13 @@ p {
 
 .contact-section-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .map-wrapper {
     position: relative;
     width: 50%;
-    margin-top: 86px;
+    margin-top: 60px;
 }
 
 .map-wrapper img {
@@ -224,7 +224,11 @@ line-height: 26px;
         padding: 100px 20px;
     }
 
+    .address-text {
+        font-size: 14px;
+    }
+
     .contact-tools {
-        
-    }    
+        font-size: 14px;   
+    }
 }

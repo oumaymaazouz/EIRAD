@@ -155,11 +155,6 @@ color: #d29c01;
   text-align: center;
 }
 
-.menu-bottom .fa-linkedin-square {
-  color: #ffffff;
-  font-size: 22px;
-}
-
 .menu-bottom p {
   line-height: 16px;
   padding: 0 16px;
@@ -686,9 +681,6 @@ font-size: 14px;
   bottom: 20px;
 }
 
-.menu-bottom .fa-linkedin-square {
-  color: #ffffff;
-}
 
 .menu-bottom p {
   color: #ffffff;
