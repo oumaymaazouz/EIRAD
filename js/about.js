@@ -25,14 +25,6 @@ function manageVisibility(selectedAvatar) {
         document.getElementById(value+'-description').classList.add('visible');
         selectedAvatar.classList.add('selected-director');
         myobj.set_elemId(value);
-
-        // For mobile screens
-        // document.getElementById(value+'-description').scrollIntoView({
-        //     block: "start",
-        //     behavior: "smooth",
-        // });
-        
-      
     }
 }
 
@@ -56,20 +48,24 @@ function manageVisibilityForMobile(selectedAvatar) {
     }
 }
 
-let isMobile = window.matchMedia('(max-width: 775px)');
+let isMobile = window.matchMedia('(max-width: 775px)').matches;
 
 const chairman = document.getElementById("chairman");
-chairman.addEventListener('click', function() {
+chairman.addEventListener('click', function(e) {
+    e.preventDefault();
     myobj.set_selected('chairman');
     if(isMobile) {
+        console.log('mobile');
         manageVisibilityForMobile(chairman)
     } else {
+        console.log('desktop')
         manageVisibility(chairman);
     }
 });
 
 const managing_director = document.getElementById("managing-director");
-managing_director.addEventListener('click', function() {
+managing_director.addEventListener('click', function(e) {
+    e.preventDefault();
     myobj.set_selected('managing-director');
     if(isMobile) {
         manageVisibilityForMobile(managing_director)
@@ -80,7 +76,8 @@ managing_director.addEventListener('click', function() {
 
 
 const vp_inter_business = document.getElementById("vp-inter-business");
-vp_inter_business.addEventListener('click', function() {
+vp_inter_business.addEventListener('click', function(e) {
+    e.preventDefault();
     myobj.set_selected('vp-inter-business');
     if(isMobile) {
         manageVisibilityForMobile(vp_inter_business)
@@ -91,7 +88,8 @@ vp_inter_business.addEventListener('click', function() {
 
 
 const vp_business_dev = document.getElementById("vp-business-dev");
-vp_business_dev.addEventListener('click', function() {
+vp_business_dev.addEventListener('click', function(e) {
+    e.preventDefault();
     myobj.set_selected('vp-business-dev');
     if(isMobile) {
         manageVisibilityForMobile(vp_business_dev)

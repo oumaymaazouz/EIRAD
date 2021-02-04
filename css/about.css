@@ -356,5 +356,9 @@
         padding: 0px;
     }
 
+    .content-wrapper > div {
+        margin-top: 20px;
+    }
+
 }
 
