@@ -1,114 +1,184 @@
 <!DOCTYPE html lang="en-US">
 <html>
-    <head>
-        <title>EIRAD GROUP</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="/images/cropped-eirad-favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" href="/images/cropped-eirad-favicon-192x192.png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="/images/cropped-eirad-favicon-180x180.png" />
-        <link rel="stylesheet" href="/css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/index.css">
-        <link rel="stylesheet" href="/css/vision.css">
-    </head>
-<body>
+  <head>
+    <title>EIRAD GROUP</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="/images/cropped-eirad-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="/images/cropped-eirad-favicon-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/images/cropped-eirad-favicon-180x180.png"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/vision.css" />
+  </head>
+  <body>
     <div class="container">
-        <!-- LEFT MENU-->
-        <div class="menu">
-            <div class="menu-top">
-                <a href="/">
-                    <img src="/images/logo.png" alt="logo" />
-                </a>
-                <ul class="menu-list">
-                    <li class="menu-list-item"><a href="/">Home</a></li>
-                    <li class="menu-list-item" id="menu-item-about">
-                        <span>About</span>
-                        <ul class="sub-menu-list" id="sub-menu-list-about">
-                            <li class="menu-item sub-menu-list-item"><a href="/about.html#vision-and-purpose">Vision and Purpose</a></li>
-                            <li class="menu-item sub-menu-list-item"><a href="/about.html#ceo-message">CEO Message</a></li>
-                            <li class="menu-item sub-menu-list-item"><a href="/about.html#board-of-directors">Board of directors</a></li>
-                            <li class="menu-item sub-menu-list-item" id="menu-item-leadership"><a href="/about.html#leadership">Leadership</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-list-item"><a href="/partnership.html">Partnership</a></li>
-                    <li class="menu-list-item"><a href="/contact.html">Contact</a></li>
+      <!-- LEFT MENU-->
+      <div class="menu">
+        <div class="logo-wrapper">
+          <a href="/">
+            <img src="/images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="menu-list-wrapper">
+          <ul class="menu-list">
+            <li class="menu-list-item"><a href="/">Home</a></li>
+            <li class="menu-list-item" id="menu-item-about">
+              <span class="about-text">About</span>
+              <ul class="sub-menu-list" id="sub-menu-list-about">
+                <li class="menu-item sub-menu-list-item">
+                  <a href="/about.html#vision-and-purpose"
+                    >Vision and Purpose</a
+                  >
+                </li>
+                <li class="menu-item sub-menu-list-item">
+                  <a href="/about.html#ceo-message">CEO Message</a>
+                </li>
+                <li class="menu-item sub-menu-list-item">
+                  <a href="/about.html#board-of-directors"
+                    >Board of directors</a
+                  >
+                </li>
+                <li
+                  class="menu-item sub-menu-list-item"
+                  id="menu-item-leadership"
+                >
+                  <a href="/about.html#leadership">Leadership</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-list-item">
+              <a href="/partnership.html">Partnership</a>
+            </li>
+            <li class="menu-list-item"><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="select-language-wrapper">
+          <img src="/images/saudi-arabia-flag.png" alt="saudi-arabia-flag" />
+          <a href="#">العربية</a>
+        </div>
+      </div>
+
+      <!-- <div class="expand-header">
+
+      </div> -->
+      <!-- END LEFT MENU-->
+      <!-- TOP BAR FOR MOBILE SCREENS-->
+      <header class="header-mobile">
+        <div class="header-mobile-left">
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div class="header-mobile-center">
+          <a href="/">
+            <img src="/images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="header-mobile-right"></div>
+      </header>
+
+      <div class="mobile-menu-overlay">
+        <div class="inner-mobile-menu-overlay">
+          <div class="menu-top">
+            <ul class="menu-list">
+              <li class="menu-list-item"><a href="/">Home</a></li>
+              <li class="menu-list-item" id="menu-item-about-for-mobile">
+                <span>About</span>
+                <ul class="sub-menu-list" id="sub-menu-list-about-for-mobile">
+                  <li class="menu-item sub-menu-list-item">
+                    <a href="/about.html#vision-and-purpose"
+                      >Vision and Purpose</a
+                    >
+                  </li>
+                  <li class="menu-item sub-menu-list-item">
+                    <a href="/about.html#ceo-message">CEO Message</a>
+                  </li>
+                  <li class="menu-item sub-menu-list-item">
+                    <a href="/about.html#board-of-directors"
+                      >Board of directors</a
+                    >
+                  </li>
+                  <li
+                    class="menu-item sub-menu-list-item"
+                    id="menu-item-leadership"
+                  >
+                    <a href="/about.html#leadership">Leadership</a>
+                  </li>
                 </ul>
+              </li>
+              <li class="menu-list-item">
+                <a href="/partnership.html">Partnership</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-bottom">
+            <div>
+              <p>
+                &#169; 2021 Eirad Holding Company Ltd. <br />
+                All Rights Reserved.
+              </p>
             </div>
-            <div class="menu-bottom">
-                <div>
-                   <p> &#169; 2021 Eirad Holding Company Ltd. <br />
-                    All Rights Reserved.
-                    </p>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- END LEFT MENU-->
-        <!-- TOP BAR FOR MOBILE SCREENS-->
-        <header class="header-mobile">
-            <div class="header-mobile-left">
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-
-
-            <div class="header-mobile-center">
-                <a href="/">
-                    <img src="/images/logo.png" alt="logo" />
-                </a>
-            </div>
-            <div class="header-mobile-right"></div>
-        </header>
-
-        <div class="mobile-menu-overlay">
-            <div class="inner-mobile-menu-overlay">
-                <div class="menu-top">
-                    <ul class="menu-list">
-                        <li class="menu-list-item"><a href="/">Home</a></li>
-                        <li class="menu-list-item" id="menu-item-about-for-mobile">
-                            <span>About</span>
-                            <ul class="sub-menu-list" id="sub-menu-list-about-for-mobile">
-                                <li class="menu-item sub-menu-list-item"><a href="/about.html#vision-and-purpose">Vision and Purpose</a></li>
-                                <li class="menu-item sub-menu-list-item"><a href="/about.html#ceo-message">CEO Message</a></li>
-                                <li class="menu-item sub-menu-list-item"><a href="/about.html#board-of-directors">Board of directors</a></li>
-                                <li class="menu-item sub-menu-list-item" id="menu-item-leadership"><a href="/about.html#leadership">Leadership</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-list-item"><a href="/partnership.html">Partnership</a></li>
-                        <li class="menu-list-item"><a href="/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="menu-bottom">
-                    <div>
-                        <p> &#169; 2021 Eirad Holding Company Ltd. <br />
-                        All Rights Reserved.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END TOP BAR FOR MOBILE SCREENS-->
+      </div>
+      <!-- END TOP BAR FOR MOBILE SCREENS-->
+      <div class="hero-section-wrapper">
         <div class="hero-section">
-            <!-- <img src="/images/homepage.jpg" alt="hero-img"/> -->
-            <!-- AREA WITH TEXT FOR DESKTOP-->
-          
-                <div class="area-with-text-content">
-                    <div class="website-title">
-                        <h1>EIRAD GROUP</h1>
-                    </div>
-                    <div class="custom-card">
-                        <p>Eirad Group was established in June of 1992, founded under the leadership of the late HRH Prince Fahd bin Salman bin Abdulaziz Al-Saud.</p>
-                        <p>Eirad Group is comprised of wholly-owned companies, subsidiaries, leading business partnerships, international and local investment ventures, and authorized service partners.</p>
-                        <p>Eirad Group is headed by HRH Prince Sultan bin Fahd bin Salman bin Abdulaziz Al-Saud.</p>
-                        <p>Eirad Group strives and is synonymous with integrity, ethical business conduct and for delivering commitments. We take pride in making long-term business partnerships that resonate with trust, transparency and growth.</p>
-                    </div>
-                </div>
-         
-            <!-- END AREA WITH TEXT FOR DESKTOP-->
+          <h1>EIRAD GROUP</h1>
         </div>
+        <div>
+          <div class="custom-card">
+            <p>
+              Eirad Group was established in June of 1992, founded under the
+              leadership of the late HRH Prince Fahd bin Salman bin Abdulaziz
+              Al-Saud.
+            </p>
+            <p>
+              Eirad Group is comprised of wholly-owned companies, subsidiaries,
+              leading business partnerships, international and local investment
+              ventures, and authorized service partners.
+            </p>
+            <p>
+              Eirad Group is headed by HRH Prince Sultan bin Fahd bin Salman bin
+              Abdulaziz Al-Saud.
+            </p>
+            <p>
+              Eirad Group strives and is synonymous with integrity, ethical
+              business conduct and for delivering commitments. We take pride in
+              making long-term business partnerships that resonate with trust,
+              transparency and growth.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-<script src="/js/index.js"></script>
+    <div class="footer">
+      <p>
+        &#169; 2021 Eirad Holding Company Ltd. <br />
+        All Rights Reserved.
+      </p>
+    </div>
+  </body>
+  <script src="/js/index.js"></script>
 </html>
