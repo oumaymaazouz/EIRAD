@@ -4,20 +4,18 @@
     background-position: center !important;
     background-size: cover !important;
 }
-
-.container .menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
+.custom-card h2 {
+    color: #d29c01;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
-.container .hero-section {
-    flex: 1;
-    position: relative;
-    margin-left: 260px;
-    overflow-y: scroll;
-    height: 100%;
-    overflow-x: hidden;
+.custom-card h3 {
+    color: #12212f;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-top: 20px;
 }
 
 .partnership-content {
@@ -62,7 +60,7 @@
 .partnership-card {
     min-height: 500px;
     width: 360px;
-    border: 1px solid rgb(255 255 255 / 18%);
+    border: 3px solid #ffffff;
     margin-right: 40px;
     margin-top: 40px;
     display: flex;
@@ -300,9 +298,6 @@ label {
         padding-left: 0px !important;
         text-align: left !important;
         padding-right: 0px !important;
-    }
-    .partnership-cards-wrapper {
-        justify-content: center;
     }
 
     .partnership-card {

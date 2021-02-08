@@ -44,11 +44,12 @@ btn_ngmsa.addEventListener('click', function() {
 });
   
 
-let btn_eirad_travel = document.querySelector('.read-more-eirad-travel');
+let btn_eirad_travel = document.querySelector('.rm-eirad-travel');
 let card_content_hidden_eirad = document.querySelector('.card-content-hidden-eirad-travel');
 
 btn_eirad_travel.addEventListener('click', function() {
     if (btn_eirad_travel.innerHTML === "Read more") {
+      console.log('.......', btn_eirad_travel.innerHTML);
       btn_eirad_travel.innerHTML = "Read less";
     } else {
       btn_eirad_travel.innerHTML = "Read more";
