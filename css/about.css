@@ -1,23 +1,13 @@
-.container {
-    display: block;
+.container .hero-section-about {
+    background-image: url(/images/Team.jpg);
+    background-position: center;
 }
 
-
-.container .menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
+.custom-card h2 {
+    color: #d29c01;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
-
-.container .hero-section {
-    flex: 1;
-    position: relative;
-    margin-left: 260px;
-    /* background-color: #12212f; */
-}
-
-
-
 #vision-and-purpose {
     padding-top: 80px;
     padding-left: 40px;
@@ -45,35 +35,29 @@
     margin-bottom: 60px;
 }
 .content-wrapper {
-    width: 80%;
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+}
+
+.custom-card p {
+    margin-top: 14px;
 }
 
 .content-wrapper > div { margin-top: 40px; }
 
 .content-wrapper h3 {
-    color: #ffffff;
+    color: #12212f;
     font-weight: normal;
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-size: 18px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0;
-    font-weight: bold;
 }
 
-.content-wrapper p {
-    color: #ffffff;
-    font-size: 16px;
-    letter-spacing: 2px;
-    line-height: 25px;
-    font-weight: normal;
-    margin-top: 0.5em;
-    margin-bottom: 2em;
+.ceo-message-wrapper p {
+    margin-top: 40px;
 }
-
 
 .leadership-section {
     padding-top: 20px;
@@ -93,14 +77,6 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
-#board-of-directors {
-    padding-left: 40px;
-    background-color: #12212f;
-    padding-top: 80px;
-}
-#board-of-directors h3, #board-of-directors p{
-    color: #ffffff;
-}
 
 .leadership-section p {
     color: white;
@@ -117,8 +93,9 @@
 }
 
 .ceo-name {
-    color: #d2aa42;
+    font-weight: bold;
 }
+
 
 .directors-wrapper {
     display: flex;
@@ -141,7 +118,7 @@
     width: 200px;
     background-color: white;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 1px solid #e2dedb;
 }
 
 .director > img {
@@ -152,6 +129,10 @@
     height: 100%;
 }
 
+.dr-mahmoud {
+    background-color: #e2dedb;
+}
+
 .name-and-position-wrapper {
     text-align: center;
     margin-top: 30px;
@@ -159,21 +140,18 @@
     padding: 0px 26px;
 }
 .name-and-position-wrapper span{
-    color: #ffffff;
-    font-size: 15px;
-    font-style: normal;
-    line-height: 25px;
+    font-size: 12px;
+    color: #12212f;
+    letter-spacing: 1px;
+    line-height: 24px;
 }
 
 .name-and-position-wrapper .position {
-    font-size: 14px !important;
-    color: #ffffff;
-    font-style: normal !important;
-    letter-spacing: 0 !important;
-}
-
-.name-and-position-wrapper .position{
-    font-style: italic;
+    font-size: 12px;
+    color: #12212f;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: bold;
 }
 
 .director-description {
@@ -182,7 +160,7 @@
 
 .director-description p {
     padding-top: 0px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 14px;
 }
 
@@ -195,22 +173,11 @@
     transform: scale(1.1);
 }
 
-.team-desc {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-.team-desc h3 {
-    font-size: 23px;
-}
-.team-desc p {
-    margin-top: 0.5em;
-    padding-bottom: 0px !important;
-    width: 80%;
+.selected-director span,
+.selected-director p {
+    color: #6d7783 !important;
 }
 
-.team-desc > div {
-    margin-top: 40px; 
-}
 /* ---------------------RESPONSIVNESS-----------------------*/
 
 @media screen and (max-width: 1280px) {}
@@ -237,13 +204,6 @@
     }
     .leadership-section h2, .ceo-message {
         padding-right: 40px;
-    }
-    #board-of-directors {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .team-desc p {
-        width: 100%;
     }
 
     .ceo-message {
@@ -275,6 +235,15 @@
 
 
 @media screen and (max-width: 480px) {
+    .custom-card {
+        margin-top: 50px;
+      }
+    .custom-card h2 {
+        margin-top: 30px;
+    }
+    .content-wrapper {
+        margin-top: 0px;
+    }
     .leadership-section h2 {
         margin-bottom: 20px;
     }
@@ -294,12 +263,8 @@
         font-size: 26px;
     }
 
-    .content-wrapper {
-        margin-top: 20px;
-    }
-
     .content-wrapper h3, .leadership-section h3 {
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 0;
     }
 
@@ -335,11 +300,6 @@
     .leadership-section h2, .ceo-message {
         padding-right: 20px;
     }
-    #board-of-directors {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     .ceo-message {
         padding-left: 20px;
     }
@@ -354,11 +314,14 @@
 
     .name-and-position-wrapper {
         padding: 0px;
+        width: 60%;
     }
 
     .content-wrapper > div {
-        margin-top: 20px;
+        margin-top: 30px;
     }
+
+   
 
 }
 

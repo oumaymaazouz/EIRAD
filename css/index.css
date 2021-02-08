@@ -798,8 +798,7 @@ body {
   }
 
   .custom-card p {
-    font-size: 12px;
-    margin-top: 14px;
+    margin-top: 14px !important;
   }
 
   .container .hero-section {
