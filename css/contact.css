@@ -1,234 +1,237 @@
 .hero-section-contact {
-    flex: 1;
-    background-image: url(/images/contact.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    margin-left: 260px;
-    overflow-y: scroll;
-    height: 100%;
-    overflow-x: hidden;
-
+  background-image: url("/images/contact.jpg") !important;
+  background-position: 0px;
 }
-
-
 .inner-contact-section {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding: 80px 40px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-left: 400px;
+  padding-right: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .inner-contact-section h2 {
-
-    color: #ffffff;
-    font-size: 60px;
-    margin: 0;
-    letter-spacing: 6px;
-    text-transform: uppercase;
+  color: #12212f;
+  font-size: 60px;
+  margin: 0;
+  letter-spacing: 6px;
+  text-transform: uppercase;
 }
 
 p {
-    font-size: 26px;
-    color: white;
+  font-size: 26px;
+  color: #12212f;
 }
 
 .form-wrapper {
-    width: 30%;
-    margin-left: 60px;
+  width: 100%;
+  margin-top: 12px;
 }
 
 .form-wrapper form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.form-wrapper form input, .form-wrapper form textarea {
-    height: 60px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    margin-bottom: 20px;
-    color: white;
-    font-size: 16px;
-    letter-spacing: 1px;
+.form-wrapper form input,
+.form-wrapper form textarea {
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(18 33 47 / 13%);
+  margin-bottom: 20px;
+  color: #6d7783;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .form-wrapper form textarea {
-    margin-top: 20px;
-    padding-top: 16px;
+  margin-top: 20px;
+  padding-top: 16px;
 }
 
-.form-wrapper form input:focus, .form-wrapper form textarea:focus {
-    outline: none;
+.form-wrapper form input:focus,
+.form-wrapper form textarea:focus {
+  outline: none;
 }
 
 .btn-submit {
-    border: 1px solid #ffffff !important;
-    width: 20%;
-    margin-top: 30px;
-    float: right;
-    text-transform: uppercase;
-    height: 40px !important;
-    background: transparent !important;
-    cursor: pointer;
-    font-size: 14px !important;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-family: 'Verdana', serif;
+  border: 1px solid rgb(18 33 47 / 13%) !important;
+  width: 20%;
+  margin-top: 30px;
+  float: right;
+  text-transform: uppercase;
+  height: 40px !important;
+  background: transparent !important;
+  cursor: pointer;
+  font-size: 14px !important;
+  letter-spacing: 1px;
+  font-family: "Verdana", serif;
 }
 .btn-submit-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .contact-section-wrapper {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
 }
 
 .map-wrapper {
-    position: relative;
-    width: 50%;
-    margin-top: 60px;
+  position: relative;
+  width: 100%;
+  margin-top: 34px;
 }
 
 .map-wrapper img {
-    position: relative;
-    width: 90%;
+  position: relative;
+  width: 100%;
 }
 .address-text {
-font-size: 16px;
-margin-top: 30px;
-letter-spacing: 1px;
-line-height: 26px;
+  font-size: 14px;
+  color: #6d7783;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-top: 26px;
 }
 
 .address-text a {
-    color: #d29c01;
-    text-decoration: none;
+  color: #d29c01;
+  text-decoration: none;
 }
 
 .contact-tools {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .contact-tools > div {
-    display: flex;
-    margin-top: 10px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
 }
 
 .contact-tools > div > .fa {
-    color: #ffffff;
+  color: #6d7783;
+  font-size: 14px;
 }
 
 .contact-tools > div > span {
-    color: #ffffff;
-    letter-spacing: 1px;
-    padding-left: 10px;
+  color: #6d7783;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  font-size: 14px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #ffffff;
-    font-family: 'Verdana', serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #ffffff;
-    font-family: 'Verdana', serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #ffffff;
-    font-family: 'Verdana', serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-
-  .container .menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6d7783;
+  font-family: "Verdana", serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 1; /* Firefox */
 }
-  @media screen and (max-width: 1280px) {
-    .contact-section-wrapper {
-        flex-direction: column-reverse;
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #6d7783;
+  font-family: "Verdana", serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #6d7783;
+  font-family: "Verdana", serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 1500px) {
+  .inner-contact-section {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .inner-contact-section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .contact-section-wrapper {
+    flex-direction: column-reverse;
     align-items: flex-start;
-    }
-
-    .map-wrapper {
-        width: 100%;
-        margin-bottom: 80px;
-    }
-
-    .form-wrapper {
-        width: 90%;
-    margin-left: 0;
-    margin-top: 50px;
-    }
   }
 
+  .map-wrapper {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+}
 
 @media screen and (max-width: 960px) {
-    .inner-contact-section {
-        padding-top: 130px;
-    }
+  .inner-contact-section {
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-    .btn-submit-wrapper {
-        align-items: center;
-    }
-
-    .hero-section-contact {
-        margin-left: 0px;
-    }
-
-    .inner-contact-section h2 {
-        font-size: 46px;
+  .btn-submit-wrapper {
+    align-items: center;
+  }
+  .inner-contact-section h2 {
+    font-size: 46px;
     margin-top: 40px;
-    }
+  }
 
-    .btn-submit {
-        width: 100%;
-    }
+  .btn-submit {
+    width: 100%;
+  }
 }
 
-
 @media screen and (max-width: 480px) {
-    .form-wrapper {
-        width: 100%;
-        margin-top: 20px;
+    .form-wrapper form input, .form-wrapper form textarea {
+        height: 40px;
     }
+  .map-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
-    .map-wrapper img {
-        width: 100%;
-    }
+  .address-text {
+    font-size: 12px;
+  }
 
-    .map-wrapper {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .inner-contact-section {
-        padding: 100px 20px;
-    }
+  .contact-tools {
+    font-size: 12px;
+  }
 
-    .address-text {
-        font-size: 14px;
-    }
-
-    .contact-tools {
-        font-size: 14px;   
-    }
+  ::placeholder {
+    font-size: 12px;
+  }
+  
+  :-ms-input-placeholder {
+    font-size: 12px;
+  }
+  
+  ::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .btn-submit {
+    font-size: 12px !important;
+  }
+  .contact-tools > div > span {
+      font-size: 12px;
+  }
 }
