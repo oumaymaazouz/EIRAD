@@ -167,10 +167,16 @@
 .visible {
     display: block;
     width: 80%;
+    margin-top: 60px;
 }
 
 .selected-director {
     transform: scale(1.1);
+}
+
+.selected-director- {
+    /* transform: scale(1.1); */
+    margin-top: 40px !important;
 }
 
 .selected-director span,

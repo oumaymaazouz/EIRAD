@@ -28,9 +28,6 @@ function manageVisibility(selectedAvatar) {
     }
 }
 
-
-
-
 function manageVisibilityForMobile(selectedAvatar) {
     const value = myobj.get_selected();
     const a = myobj.get_elemId()+'-description-mobile';
@@ -40,10 +37,8 @@ function manageVisibilityForMobile(selectedAvatar) {
     }
     if(document.getElementById(value+'-description-mobile').classList.length == 4) {
         document.getElementById(value+'-description-mobile').classList.remove('visible');
-        selectedAvatar.classList.remove('selected-director');
     } else {
         document.getElementById(value+'-description-mobile').classList.add('visible');
-        selectedAvatar.classList.add('selected-director');
         myobj.set_elemId(value);
     }
 }
