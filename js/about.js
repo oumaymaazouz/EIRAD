@@ -55,10 +55,8 @@ chairman.addEventListener('click', function(e) {
     e.preventDefault();
     myobj.set_selected('chairman');
     if(isMobile) {
-        console.log('mobile');
         manageVisibilityForMobile(chairman)
     } else {
-        console.log('desktop')
         manageVisibility(chairman);
     }
 });
