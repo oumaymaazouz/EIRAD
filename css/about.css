@@ -56,7 +56,7 @@
 }
 
 .ceo-message-wrapper p {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .leadership-section {
@@ -184,6 +184,14 @@
     color: #6d7783 !important;
 }
 
+.left-side {
+    float: left;
+    padding: 1%;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
 /* ---------------------RESPONSIVNESS-----------------------*/
 
 @media screen and (max-width: 1280px) {}
@@ -234,6 +242,7 @@
     }
 
     .director-description {
+        margin-top: 0px;
         margin-bottom: 40px;
     }
 }

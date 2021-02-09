@@ -138,14 +138,14 @@
                     </div>
                     <div class="form-wrapper">
                         <form>
-                            <input type="text" name="name" placeholder="Name" />
-                            <input type="text" name="company" placeholder="Company" />
-                            <input type="tel" name="Phone" placeholder="Phone" />
-                            <input type="email" name="Email" placeholder="Email" />
-                            <textarea type="textarea" name="Comments" placeholder="Questions / Comments"
+                            <input id="name" type="text" name="name" placeholder="Name" />
+                            <input id="company" type="text" name="company" placeholder="Company" />
+                            <input id="phone" type="tel" name="phone" placeholder="Phone" />
+                            <input id="email" type="email" name="email" placeholder="Email" />
+                            <textarea id="comments" type="textarea" name="comments" placeholder="Questions / Comments"
                                 rows="8"></textarea>
                             <div class="btn-submit-wrapper">
-                                <input class="btn-submit" type="submit" name="submit" value="Send" />
+                                <input class="btn-submit" type="submit" name="submit" id="submit" value="Send" />
                             </div>
                         </form>
                     </div>
@@ -167,5 +167,100 @@
     </div>
 </body>
 <script src="/js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function ValidateEmail(mail)
+        {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+          {
+            return (true)
+          } else {
+            return (false)
+          }
+        }
+  </script>
+<script>
+    $(document).ready(function() {
+      $('#submit').click(function() {
+  
+        const $name = $('#name').val();
+        const $email = $('#email').val();
+        const $comments = $('#comments').val();
+        const $phone = $('#phone').val();
+        const $company = $('#company').val();
 
+        if ($name === '' || $email === '' || $comments === '' || $phone === '' || $company === '' ) {
+
+          console.log('field is missing');
+
+        } else {
+          $.ajax({
+            url: "sendEmail.php",
+            method: "POST",
+            data: { name: $name, email: $email, $company: $company, $phone: $phone, $comments: $comments },
+            beforeSend: function () {
+              $("#name").attr("disabled", true);
+              $("#email").attr("disabled", true);
+              $("#comments").attr("disabled", true);
+              $("#phone").attr("disabled", true);
+              $("#company").attr("disabled", true);
+              $("#submit").attr("disabled", true);
+            //   $("#submit").css("display", "none");
+            //   $("#submit-spinner").css("display", "flex");
+            },
+            success: function(data) {
+                $("#name").attr("disabled", false);
+                $("#email").attr("disabled", false);
+                $("#comments").attr("disabled", false);
+                $("#phone").attr("disabled", false);
+                $("#company").attr("disabled", false);
+                $("#submit").attr("disabled", false);
+
+              if(ValidateEmail($email)) {
+                  console.log('message sent');
+                // email is send successfully ==> display alert of success
+                // $("#alert-success").css("display", "block");
+                // $("#submit").css("display", "flex");
+                // $("#submit-spinner").css("display", "none");
+                $("form").trigger("reset");
+                setTimeout(function() {
+                //   $("#alert-success").css("display", "none");
+                }, 2000);
+
+              } else {
+                console.log('email warning');
+                // $("#submit").css("display", "flex");
+                // $("#submit-spinner").css("display", "none");
+                // tell what is wrong in email input
+                // $("#alert-warning-email").css("display", "block");
+                  setTimeout(function() {
+                    // $("#alert-warning-email").css("display", "none");
+                }, 2000);
+              }
+            },
+            error : function(resultat, statut, erreur){
+              console.log("Error", resultat, statut, erreur);
+                $("#name").attr("disabled", false);
+                $("#email").attr("disabled", false);
+                $("#comments").attr("disabled", false);
+                $("#phone").attr("disabled", false);
+                $("#company").attr("disabled", false);
+                $("#submit").attr("disabled", false);
+            },
+
+            complete : function(resultat, statut){
+              console.log("Complete", resultat, statut);
+                $("#name").attr("disabled", false);
+                $("#email").attr("disabled", false);
+                $("#comments").attr("disabled", false);
+                $("#phone").attr("disabled", false);
+                $("#company").attr("disabled", false);
+                $("#submit").attr("disabled", false);
+            }
+          });
+
+        }
+      })
+    })
+  </script>
 </html>
