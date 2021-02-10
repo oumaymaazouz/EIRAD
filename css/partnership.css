@@ -58,8 +58,7 @@
 }
 
 .partnership-card {
-    min-height: 500px;
-    width: 360px;
+    width: 300px;
     border: 3px solid #ffffff;
     margin-right: 40px;
     margin-top: 40px;
@@ -93,13 +92,15 @@
     position: relative;
     padding: 30px 30px;
     flex: 1;
+    text-align: center;
 }
 
 .partnership-card-body p.card-title {
-    color: #d29c01;
+    color: #6d7783;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .partnership-card-body p.card-content {
@@ -114,6 +115,7 @@
     line-height: 18px;
     font-style: normal;
     margin-top: 6px;
+    text-align: justify;
 }
 
 .partnership-card-body > em {
@@ -125,7 +127,7 @@
 
 .read-more {
     background-color: transparent;
-    color: #d29c01;
+    color: #6d7783;
     border: none;
     margin-top: 20px;
     font-size: 14px;
@@ -156,7 +158,7 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    color: #12212f;
+    color: #6d7783;
     font-weight: bold;
     letter-spacing: 1px;
     text-decoration: none;
@@ -325,4 +327,46 @@ label {
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+
+/************************ARABIC VERSION*******************************/
+
+.arabic-container .custom-card h2 {
+    font-size: 36px;
+}
+
+.arabic-container .custom-card h3 {
+    font-size: 28px;
+}
+
+.arabic-container .read-more {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.arabic-container .partnership-card-body p.card-content {
+    font-size: 20px;
+}
+
+.arabic-container .partnership-card-body p.card-title {
+    font-size: 26px;
+}
+
+
+.arabic-container .card-content-hidden-ngmsa,
+.arabic-container .card-content-hidden-eirad-travel,
+.arabic-container .card-content-hidden-ups ,
+.arabic-container .card-content-hidden-keir,
+.arabic-container .card-content-hidden-sas{
+    font-size: 20px !important;
+}
+
+.arabic-container .partnership-card-footer {
+    flex-direction: row-reverse;
+}
+.arabic-container .partnership-card-footer span {
+    padding-top: 2px;
+}
+.arabic-container .partnership-card-footer .fa {
+    margin-left: 10px;
 }
