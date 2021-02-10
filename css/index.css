@@ -1045,10 +1045,16 @@ body {
     padding-top: 3px;
     color: #6d7783;
 }
+.arabic-container .hero-section h1 {
+  padding-right: 40px;
+}
 }
 
 @media screen and (max-width: 480px) {
 .arabic-container .custom-card p {
   line-height: 30px;
+}
+.arabic-container .hero-section h1 {
+  padding-right: 20px;
 }
 }
