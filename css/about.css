@@ -380,7 +380,22 @@
     .arabic-container .hero-section h1 {
         padding-right: 40px;
     }
+    .arabic-container .custom-card h2 {
+        font-size: 28px;
+    }
+    .arabic-container .content-wrapper h3 {
+        font-size: 26px;
+    }
 }
+@media screen and (max-width: 600px) {
+    .arabic-container .custom-card h2 {
+        font-size: 24px;
+    }
+    .arabic-container .content-wrapper h3 {
+        font-size: 22px;
+    }
+}
+
 @media screen and (max-width: 480px) {
 .content-wrapper p, .leadership-section-ceo-message p {
     padding-right: 0px;
