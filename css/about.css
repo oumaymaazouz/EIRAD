@@ -8,6 +8,8 @@
     font-size: 22px;
     letter-spacing: 1px;
 }
+
+
 #vision-and-purpose {
     padding-top: 80px;
     padding-left: 40px;
@@ -339,3 +341,48 @@
 
 }
 
+/**************************ARABIC VERSION*****************************************/
+.arabic-container .custom-card h2 {
+    font-size: 36px;
+}
+
+.arabic-container .content-wrapper h3 {
+    font-size: 32px;
+}
+
+.arabic-container .name-and-position-wrapper span {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.arabic-container .director-wrapper {
+    margin-right: 0px;
+}
+
+.right-side {
+    float: right;
+    padding: 1%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+    .arabic-container .hero-section h1 {
+        padding-right: 100px;
+    }
+    .arabic-container .name-and-position-wrapper span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .arabic-container .hero-section h1 {
+        padding-right: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+.content-wrapper p, .leadership-section-ceo-message p {
+    padding-right: 0px;
+}
+}
