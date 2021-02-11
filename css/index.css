@@ -50,7 +50,7 @@ body {
   height: 140;
   background-color: #f7f7f7;
   display: flex;
-  padding: 20px 400px;
+  padding: 20px 200px;
 }
 
 .logo-wrapper {
@@ -986,7 +986,7 @@ body {
 }
 
 .arabic-container .hero-section h1 {
-  padding-right: 400px;
+  padding-right: 200px;
   padding-left: 0px;
   font-size: 100px;
 }
@@ -1050,10 +1050,21 @@ body {
     padding-top: 3px;
     color: #6d7783;
 }
-.arabic-container .hero-section h1 {
-  padding-right: 40px;
+
 }
+
+@media screen and (max-width: 960px) {
+  .arabic-container .hero-section h1 {
+    padding-right: 40px;
+  }
 }
+
+@media screen and (max-width: 572px) {
+  .arabic-container .hero-section h1 {
+    padding-right: 40px;
+  }
+}
+
 
 @media screen and (max-width: 480px) {
 .arabic-container .custom-card p {

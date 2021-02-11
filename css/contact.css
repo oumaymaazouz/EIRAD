@@ -6,8 +6,8 @@
   position: relative;
   height: 100%;
   width: 100%;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -26,8 +26,8 @@ p {
 }
 
 .form-wrapper {
-  width: 100%;
-  margin-top: 12px;
+  width: 50%;
+  padding: 20px 0px 20px 20px;
 }
 
 .form-wrapper form {
@@ -79,19 +79,24 @@ p {
 
 .contact-section-wrapper {
   display: flex;
-  align-items: center;
-  flex-direction: column-reverse;
+  align-items: flex-start;
+  flex-direction: row-reverse;
 }
 
 .map-wrapper {
   position: relative;
-  width: 100%;
-  margin-top: 34px;
+  width: 50%;
+  padding: 20px 20px 20px 0px;
 }
 
 .map-wrapper img {
   position: relative;
   width: 100%;
+}
+
+.contact-information {
+  display: flex;
+  justify-content: space-between;
 }
 .address-text {
   font-size: 14px;
@@ -169,14 +174,19 @@ p {
     padding-left: 100px;
     padding-right: 100px;
   }
+}
+
+@media screen and (max-width: 1366px) {
   .contact-section-wrapper {
     flex-direction: column-reverse;
-    align-items: flex-start;
   }
-
+  .form-wrapper {
+    width: 100%;
+    padding: 0;
+  }
   .map-wrapper {
     width: 100%;
-    margin-bottom: 80px;
+    padding: 0;
   }
 }
 
@@ -199,6 +209,14 @@ p {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 572px) {
+  .contact-information {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
 
 @media screen and (max-width: 480px) {
     .form-wrapper form input, .form-wrapper form textarea {
@@ -233,5 +251,23 @@ p {
   }
   .contact-tools > div > span {
       font-size: 12px;
+  }
+}
+
+
+/************************ARABIC VERSION******************************/
+.arabic-container .address-text {
+  font-size: 22px;
+}
+
+.arabic-container .contact-tools > div > span {
+  font-size: 22px;
+}
+
+
+
+@media screen and (max-width: 572px) {
+  .arabic-container .contact-information {
+    align-items: inherit;
   }
 }
