@@ -80,7 +80,7 @@ p {
 .contact-section-wrapper {
   display: flex;
   align-items: flex-start;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .map-wrapper {
@@ -178,7 +178,7 @@ p {
 
 @media screen and (max-width: 1366px) {
   .contact-section-wrapper {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
   }
   .form-wrapper {
     width: 100%;
@@ -264,6 +264,9 @@ p {
   font-size: 22px;
 }
 
+.arabic-container .contact-section-wrapper {
+  flex-direction: row-reverse;
+}
 
 
 @media screen and (max-width: 572px) {

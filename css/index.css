@@ -238,11 +238,11 @@ body {
   font-size: 60px;
   font-weight: normal;
   color: #f7f7f7;
-  padding-left: 400px;
+  padding-left: 200px;
 }
 .custom-card {
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
   margin-top: 80px;
   margin-bottom: 80px;
 }
