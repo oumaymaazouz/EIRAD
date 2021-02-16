@@ -151,6 +151,11 @@ body {
   text-decoration: none;
 }
 
+.select-arabic-language-wrapper a {
+  color: #6d7783 !important;
+  font-size: 16px !important;
+}
+
 #menu-item-about ul#sub-menu-list-about,
 #menu-item-about-for-mobile ul#sub-menu-list-about-for-mobile {
   list-style: none;
@@ -202,7 +207,7 @@ body {
   text-align: center;
 }
 
-.menu-bottom p {
+.arabic-container .menu-bottom p {
   line-height: 16px;
   padding: 0 16px;
   color: #12212f;
@@ -472,7 +477,7 @@ body {
   padding-top: 200px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -594,10 +599,15 @@ body {
   }
   .custom-card {
     margin-top: 40px;
+    margin-bottom: 30px;
   }
   .menu-bottom p {
+    font-size: 12px;
+    color: #12212f;
+  }
+  .arabic-container .menu-bottom p {
     font-size: 18px;
-}
+  }
 }
 
 /*
@@ -757,7 +767,7 @@ body {
   bottom: 20px;
 }
 
-.menu-bottom p {
+.arabic-container .menu-bottom p {
   color: #12212f;
   font-weight: normal;
 }
@@ -806,7 +816,7 @@ body {
     margin-bottom: 14px;
   }
 
-  .menu-bottom p {
+  .arabic-container .menu-bottom p {
     font-size: 16px;
     text-align: center;
     margin: auto;
@@ -993,7 +1003,8 @@ body {
 .arabic-mobile-menu-overlay .inner-mobile-menu-overlay {
   padding-top: 146px;
 }
-.arabic-mobile-menu-overlay .inner-mobile-menu-overlay li a, .inner-mobile-menu-overlay li span {
+.arabic-mobile-menu-overlay .inner-mobile-menu-overlay li a,
+.arabic-mobile-menu-overlay .inner-mobile-menu-overlay li span {
   font-size: 24px;
 }
 
@@ -1024,14 +1035,14 @@ body {
   }
   .arabic-container .logo-wrapper img {
     width: 80px;
-}
-.select-english-lang-wrapper a {
-  font-size: 20px;
-}
-.arabic-container .hero-section h1 {
-  padding-right: 100px;
-  font-size: 80px;
-}
+  }
+  .select-english-lang-wrapper a {
+    font-size: 20px;
+  }
+  .arabic-container .hero-section h1 {
+    padding-right: 100px;
+    font-size: 80px;
+  }
 }
 
 @media screen and (max-width: 1015px) {
@@ -1045,12 +1056,14 @@ body {
 }
 
 @media screen and (max-width: 980px) {
-.arabic-mobile-menu-overlay .inner-mobile-menu-overlay li.select-english-lang-wrapper a {
-  font-size: 18px;
+  .arabic-mobile-menu-overlay
+    .inner-mobile-menu-overlay
+    li.select-english-lang-wrapper
+    a {
+    font-size: 18px;
     padding-top: 3px;
     color: #6d7783;
-}
-
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -1065,13 +1078,12 @@ body {
   }
 }
 
-
 @media screen and (max-width: 480px) {
-.arabic-container .custom-card p {
-  line-height: 30px;
-}
-.arabic-container .hero-section h1 {
-  padding-right: 20px;
-  font-size: 70px;
-}
+  .arabic-container .custom-card p {
+    line-height: 30px;
+  }
+  .arabic-container .hero-section h1 {
+    padding-right: 20px;
+    font-size: 70px;
+  }
 }
