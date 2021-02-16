@@ -233,6 +233,10 @@ body {
   justify-content: center;
 }
 
+.arabic-container .hero-section {
+  background-image: url(/images/homepage1.jpg);
+}
+
 .container .hero-section > img {
   position: relative;
   height: 100%;
