@@ -246,6 +246,9 @@ p {
   .btn-submit {
     width: 100%;
   }
+  .map-wrapper .map-img-wrapper img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 572px) {
