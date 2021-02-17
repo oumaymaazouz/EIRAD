@@ -88,7 +88,9 @@ p {
   width: 50%;
   padding: 20px 20px 20px 0px;
 }
-
+.map-img {
+  width: 100%;
+}
 .map-wrapper .map-img-wrapper {
   position: relative;
   width: 100%;
@@ -247,6 +249,17 @@ p {
 }
 
 @media screen and (max-width: 572px) {
+  .inner-contact-section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .map-wrapper {
+    padding: 0px;
+  }
+  .form-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .contact-information {
     flex-direction: column;
     align-items: flex-end;
@@ -259,8 +272,8 @@ p {
         height: 40px;
     }
   .map-wrapper {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .address-text {

@@ -225,7 +225,7 @@ body {
 .container .hero-section {
   position: relative;
   height: 60vh;
-  background-image: url(/images/homepage.jpg);
+  background-image: url(/images/homepage1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -233,9 +233,9 @@ body {
   justify-content: center;
 }
 
-.arabic-container .hero-section {
+/* .arabic-container .hero-section {
   background-image: url(/images/homepage1.jpg);
-}
+} */
 
 .container .hero-section > img {
   position: relative;
@@ -243,11 +243,16 @@ body {
   width: 100%;
 }
 
+
 .container .hero-section h1 {
   font-size: 60px;
   font-weight: normal;
   color: #f7f7f7;
   padding-left: 200px;
+}
+
+.globe-icon {
+  width: 50px;
 }
 .custom-card {
   padding-left: 200px;
