@@ -1,403 +1,427 @@
 .container .hero-section-about {
-    background-image: url(/images/Team.jpg);
-    background-position: center;
+  background-image: url(/images/Team.jpg);
+  background-position: center;
 }
 
 .custom-card h2 {
-    color: #d29c01;
-    font-size: 22px;
-    letter-spacing: 1px;
+  color: #d29c01;
+  font-size: 22px;
+  letter-spacing: 1px;
 }
-
 
 #vision-and-purpose {
-    padding-top: 80px;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    background-color: #12212f;
+  padding-top: 80px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #12212f;
 }
 
-#vision-and-purpose h2, .leadership-section h2 {
-    color: #ffffff;
-    font-size: 60px;
-    margin: 0;
-    letter-spacing: 6px;
+#vision-and-purpose h2,
+.leadership-section h2 {
+  color: #ffffff;
+  font-size: 60px;
+  margin: 0;
+  letter-spacing: 6px;
 }
 
 .ceo-message {
-    margin-top: 40px;
-    width: 80%;
-    padding-left: 40px;
+  margin-top: 40px;
+  width: 80%;
+  padding-left: 40px;
 }
-
 
 .leadership-section h2 {
-    color: white;
-    margin-bottom: 60px;
+  color: white;
+  margin-bottom: 60px;
 }
 .content-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .custom-card p {
-    margin-top: 14px;
+  margin-top: 14px;
 }
 
-.content-wrapper > div { margin-top: 40px; }
+.content-wrapper > div {
+  margin-top: 40px;
+}
 
 .content-wrapper h3 {
-    color: #12212f;
-    font-weight: normal;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0;
+  color: #12212f;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .ceo-message-wrapper p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .leadership-section {
-    padding-top: 20px;
-    margin-right: 40px;
-    padding-bottom: 40px;
+  padding-top: 20px;
+  margin-right: 40px;
+  padding-bottom: 40px;
 }
 
-
 .leadership-section-ceo-message {
-    min-height: 80vh;
-    padding-top: 46px;
+  min-height: 80vh;
+  padding-top: 46px;
 }
 
 .leadership-section h3 {
-    color: white;
-    font-size: 27px;
-    font-weight: bold;
-    letter-spacing: 2px;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .leadership-section p {
-    color: white;
-    font-size: 16px;
-    letter-spacing: 2px;
-    line-height: 25px;
-    font-weight: normal;
-    margin-top: 0.5em;
-    padding-bottom: 2em;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  font-weight: normal;
+  margin-top: 0.5em;
+  padding-bottom: 2em;
 }
 
-.leadership-section-ceo-message p{
-    width: 80%;
+.leadership-section-ceo-message p {
+  width: 80%;
 }
 
 .ceo-name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-
 .directors-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.chairmanContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restOfDirectorsContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .director-wrapper {
-    width: 300px;
-    margin-right: 40px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    transition: all .2s ease-in;
+  width: 300px;
+  margin-right: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 
 .director {
-    height: 200px;
-    width: 200px;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid #e2dedb;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #e2dedb;
 }
 
 .director > img {
-    position: relative;
-    width: 100%;
-    object-fit: contain;
-    border-radius: 50%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  height: 100%;
 }
 
 .dr-mahmoud {
-    background-color: #e2dedb;
+  background-color: #e2dedb;
 }
 
 .name-and-position-wrapper {
-    text-align: center;
-    margin-top: 30px;
-    min-height: 100px;
-    padding: 0px 26px;
+  text-align: center;
+  margin-top: 30px;
+  min-height: 100px;
+  padding: 0px 26px;
 }
-.name-and-position-wrapper span{
-    font-size: 12px;
-    color: #12212f;
-    letter-spacing: 1px;
-    line-height: 24px;
+.name-and-position-wrapper span {
+  font-size: 12px;
+  color: #12212f;
+  letter-spacing: 1px;
+  line-height: 24px;
 }
 
 .name-and-position-wrapper .position {
-    font-size: 12px;
-    color: #12212f;
-    letter-spacing: 1px;
-    line-height: 24px;
-    font-weight: bold;
+  font-size: 12px;
+  color: #12212f;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 .director-description {
-    display: none;
+  display: none;
 }
 
 .director-description p {
-    padding-top: 0px;
-    margin-bottom: 10px;
-    font-size: 14px;
+  padding-top: 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .visible {
-    display: block;
-    width: 80%;
-    margin-top: 60px;
+  display: block;
+  width: 80%;
+  margin-top: 60px;
 }
 
 .selected-director {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .selected-director- {
-    /* transform: scale(1.1); */
-    margin-top: 40px !important;
+  /* transform: scale(1.1); */
+  margin-top: 40px !important;
 }
 
 .selected-director span,
 .selected-director p {
-    color: #6d7783 !important;
+  color: #6d7783 !important;
 }
 
 .left-side {
-    float: left;
-    padding: 1%;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+  float: left;
+  padding: 1%;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 /* ---------------------RESPONSIVNESS-----------------------*/
 
-@media screen and (max-width: 1280px) {}
-
+@media screen and (max-width: 1280px) {
+}
 
 @media screen and (max-width: 960px) {
-    #vision-and-purpose h2, .leadership-section h2 {
-        font-size: 46px;
-        text-transform: uppercase;
-    }
-    .visible {
-        width: 100%;
-    }
+  #vision-and-purpose h2,
+  .leadership-section h2 {
+    font-size: 46px;
+    text-transform: uppercase;
+  }
+  .visible {
+    width: 100%;
+  }
 
-    .content-wrapper {
-        width: 100%;
-    }
-    #vision-and-purpose {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    #ceo-message {
-        width: 100%;
-    }
-    .leadership-section h2, .ceo-message {
-        padding-right: 40px;
-    }
+  .content-wrapper {
+    width: 100%;
+  }
+  #vision-and-purpose {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #ceo-message {
+    width: 100%;
+  }
+  .leadership-section h2,
+  .ceo-message {
+    padding-right: 40px;
+  }
 
-    .ceo-message {
-        width: 100%;
-    }
+  .ceo-message {
+    width: 100%;
+  }
 
-    #vision-and-purpose {
-        padding-top: 160px;
-    }
+  #vision-and-purpose {
+    padding-top: 160px;
+  }
 }
 
 @media screen and (max-width: 935px) {
-    .directors-wrapper {
-        justify-content: center;
-    }
+  .directors-wrapper {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 775px) {
-    .director-wrapper {
-        width: 100%;
-        margin: 40px;
-    }
 
-    .director-description {
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
 }
 
-
-
 @media screen and (max-width: 480px) {
-    .custom-card {
-        margin-top: 50px;
-      }
-    .custom-card h2 {
-        margin-top: 30px;
-    }
-    .content-wrapper {
-        margin-top: 0px;
-    }
-    .leadership-section h2 {
-        margin-bottom: 20px;
-    }
-    .director {
-        height: 160px;
-        width: 160px;
-    }
-    .leadership-section  {
-        padding-top: 20px;
-    }
+  .custom-card {
+    margin-top: 50px;
+  }
+  .custom-card h2 {
+    margin-top: 30px;
+  }
+  .content-wrapper {
+    margin-top: 0px;
+  }
+  .leadership-section h2 {
+    margin-bottom: 20px;
+  }
+  .director {
+    height: 160px;
+    width: 160px;
+  }
+  .leadership-section {
+    padding-top: 20px;
+  }
 
-    #vision-and-purpose {
-        padding-top: 130px;
-    }
+  #vision-and-purpose {
+    padding-top: 130px;
+  }
 
-    #vision-and-purpose h2, .leadership-section h2 {
-        font-size: 26px;
-    }
+  #vision-and-purpose h2,
+  .leadership-section h2 {
+    font-size: 26px;
+  }
 
-    .content-wrapper h3, .leadership-section h3 {
-        font-size: 16px;
-        margin-top: 0;
-    }
+  .content-wrapper h3,
+  .leadership-section h3 {
+    font-size: 16px;
+    margin-top: 0;
+  }
 
-    .content-wrapper p, .leadership-section-ceo-message p {
-        font-size: 14px;
-    }
-    .leadership-section-ceo-message {
-        padding-top: 20px;
-    }
-    .director-wrapper {
-        margin: 20px;
-    }
+  .content-wrapper p,
+  .leadership-section-ceo-message p {
+    font-size: 14px;
+  }
+  .leadership-section-ceo-message {
+    padding-top: 20px;
+  }
 
-    .name-and-position-wrapper span {
-        font-size: 14px;
-    }
+  .name-and-position-wrapper span {
+    font-size: 14px;
+  }
 
-    .name-and-position-wrapper p.position {
-        margin-bottom: 1em !important;
-        font-size: 14px !important;
-    }
+  .name-and-position-wrapper p.position {
+    margin-bottom: 1em !important;
+    font-size: 14px !important;
+  }
 
+  .content-wrapper p,
+  .leadership-section-ceo-message p {
+    padding-right: 20px;
+  }
 
-    .content-wrapper p, .leadership-section-ceo-message p {
-        padding-right: 20px;
-    }
+  #vision-and-purpose {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
 
-    #vision-and-purpose {
-        padding-left: 20px;
-        padding-right: 0px;
-    }
+  .leadership-section h2,
+  .ceo-message {
+    padding-right: 20px;
+  }
+  .ceo-message {
+    padding-left: 20px;
+  }
 
-    .leadership-section h2, .ceo-message {
-        padding-right: 20px;
-    }
-    .ceo-message {
-        padding-left: 20px;
-    }
+  .leadership-section p {
+    font-size: 14px;
+  }
 
-    .leadership-section p {
-        font-size: 14px;
-    }
+  .director-description p {
+    font-size: 12px;
+  }
 
-    .director-description p {
-        font-size: 12px;
-    }
+  .name-and-position-wrapper {
+    padding: 0px;
+  }
 
-    .name-and-position-wrapper {
-        padding: 0px;
-    }
-
-    .content-wrapper > div {
-        margin-top: 30px;
-    }
-
-   
-
+  .content-wrapper > div {
+    margin-top: 30px;
+  }
 }
 
 /**************************ARABIC VERSION*****************************************/
 .arabic-container .custom-card h2 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .arabic-container .content-wrapper h3 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .arabic-container .name-and-position-wrapper span {
-    font-size: 26px;
-    line-height: 30px;
+  font-size: 26px;
+  line-height: 30px;
 }
 
 .arabic-container .director-wrapper {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .right-side {
-    float: right;
-    padding: 1%;
-    margin-left: 40px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+  float: right;
+  padding: 1%;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 1280px) {
-    .arabic-container .hero-section h1 {
-        padding-right: 100px;
-    }
-    .arabic-container .name-and-position-wrapper span {
-        font-size: 20px;
-    }
+  .arabic-container .hero-section h1 {
+    padding-right: 100px;
+  }
+  .arabic-container .name-and-position-wrapper span {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 960px) {
-    .arabic-container .hero-section h1 {
-        padding-right: 40px;
-    }
-    .arabic-container .custom-card h2 {
-        font-size: 28px;
-    }
-    .arabic-container .content-wrapper h3 {
-        font-size: 26px;
-    }
+  .arabic-container .hero-section h1 {
+    padding-right: 40px;
+  }
+  .arabic-container .custom-card h2 {
+    font-size: 28px;
+  }
+  .arabic-container .content-wrapper h3 {
+    font-size: 26px;
+  }
+  .director-wrapper {
+    width: 240px;
+    margin-right: 0px;
+  }
+  .director {
+    height: 160px;
+    width: 160px;
+  }
 }
 @media screen and (max-width: 600px) {
-    .arabic-container .custom-card h2 {
-        font-size: 24px;
-    }
-    .arabic-container .content-wrapper h3 {
-        font-size: 22px;
-    }
+  .arabic-container .custom-card h2 {
+    font-size: 24px;
+  }
+  .arabic-container .content-wrapper h3 {
+    font-size: 22px;
+  }
+  .restOfDirectorsContainer {
+    flex-direction: column;
+    align-items: center;
+}
+.director-description {
+    margin-top: 0px;
+    margin-bottom: 40px;
+
+    text-align: center;
+
+  }
+  .director-wrapper {
+      margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-.content-wrapper p, .leadership-section-ceo-message p {
+  .content-wrapper p,
+  .leadership-section-ceo-message p {
     padding-right: 0px;
-}
+  }
 }

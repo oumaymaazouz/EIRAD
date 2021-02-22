@@ -43,7 +43,7 @@ function manageVisibilityForMobile(selectedAvatar) {
     }
 }
 
-let isMobile = window.matchMedia('(max-width: 775px)').matches;
+let isMobile = window.matchMedia('(max-width: 600px)').matches;
 
 const chairman = document.getElementById("chairman");
 chairman.addEventListener('click', function(e) {
