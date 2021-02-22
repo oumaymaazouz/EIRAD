@@ -50,7 +50,7 @@ body {
   height: 140;
   background-color: #f7f7f7;
   display: flex;
-  padding: 20px 200px;
+  padding: 20px 140px;
 }
 
 .logo-wrapper {
@@ -247,15 +247,15 @@ body {
   font-size: 60px;
   font-weight: normal;
   color: #f7f7f7;
-  padding-left: 200px;
+  padding-left: 140px;
 }
 
 .globe-icon {
   width: 50px;
 }
 .custom-card {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 140px;
+  padding-right: 140px;
   margin-top: 80px;
   margin-bottom: 80px;
 }
@@ -525,21 +525,6 @@ body {
 /****************************************************************/
 
 /* ---------------------RESPONSIVNESS-----------------------*/
-@media screen and (max-width: 1500px) {
-  .container .menu {
-    padding: 20px 200px;
-  }
-
-  .custom-card {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-
-  .container .hero-section h1 {
-    padding-left: 200px;
-  }
-}
-
 @media screen and (max-width: 1280px) {
   .container .menu {
     padding: 20px 100px;
