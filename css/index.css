@@ -815,6 +815,9 @@ body {
   .area-with-text-content {
     margin-top: 160px;
   }
+  .container .hero-section {
+    height: 28vh;
+  }
   .container .hero-section .website-title {
     padding: 0;
     padding-left: 0 !important;
