@@ -250,6 +250,10 @@ body {
   padding-left: 140px;
 }
 
+.container .home-hero-section h1 {
+  color: #A27A01;
+}
+
 .globe-icon {
   width: 50px;
 }
