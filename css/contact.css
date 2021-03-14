@@ -1,6 +1,6 @@
 .container {
   position: relative;
-    min-height: 100vh;
+  min-height: 100vh;
 }
 .hero-section-contact {
   background-image: url("/images/contact.jpg") !important;
@@ -132,6 +132,193 @@ p {
   text-decoration: none;
 }
 
+.location-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.location-wrapper span {
+  font-size: 12px;
+  color: #6d7783;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-right: 20px;
+}
+
+.location-wrapper a {
+  color: #d29c01;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.location-wrapper button,
+.location-wrapper button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.location-wrapper .fa {
+  font-size: 16px;
+  color: #6d7783;
+}
+
+/** share location modal **/
+
+.share-location-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(0 0 0 / 62%);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+.share-location-modal-overlay-visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.share-location-modal {
+  height: 300px;
+  width: 500px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.share-location-modal-arabic .modal-header,
+.share-location-modal-arabic .modal-body{
+padding-left: 0px;
+padding-right: 40px;
+}
+
+.share-location-modal-arabic .modal-header h1 {
+  font-size: 22px;
+}
+
+.share-location-modal-arabic .modal-body input {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.share-location-modal-arabic .modal-footer button:nth-child(2) {
+  margin-right: 20px;
+}
+
+.location-wrapper-arabic .fa {
+  margin-right: 20px;
+}
+
+.location-wrapper-arabic span {
+  margin-right: 0px;
+}
+
+.share-location-modal-arabic .modal-footer {
+  padding-left: 40px;
+padding-right: 0px;
+}
+.modal-header {
+  position: relative;
+  height: 20%;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  padding-left: 40px;
+}
+
+.modal-header h1 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #d29c01;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal-body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  padding-left: 40px;
+  width: 100%;
+  height: 60%;
+}
+
+.modal-body input {
+  height: 40px;
+  width: 80%;
+  padding-left: 10px;
+  background-color: transparent;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  color: #6d7783;
+}
+
+.modal-body input:focus {
+  outline: none;
+}
+
+.modal-body input:first-child {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  position: relative;
+  height: 20%;
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+  flex-direction: row;
+  justify-content: flex-end;
+  display: flex;
+  padding-right: 40px;
+  align-items: center;
+}
+
+.modal-footer button {
+  border: 1px solid rgb(18 33 47 / 13%) !important;
+  width: 20%;
+  float: right;
+  text-transform: uppercase;
+  height: 34px !important;
+  background: transparent !important;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: "Verdana", serif;
+  color: #6d7783;
+}
+
+.modal-footer button:focus {
+  outline: none;
+}
+
+.modal-footer button:first-child {
+  margin-right: 20px;
+}
+
 .contact-tools {
   display: flex;
   flex-direction: column;
@@ -161,8 +348,7 @@ p {
   color: #6d7783;
   font-family: "Verdana", serif;
   text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 12px;
   opacity: 1; /* Firefox */
 }
 
@@ -171,8 +357,7 @@ p {
   color: #6d7783;
   font-family: "Verdana", serif;
   text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 12px;
 }
 
 ::-ms-input-placeholder {
@@ -180,10 +365,8 @@ p {
   color: #6d7783;
   font-family: "Verdana", serif;
   text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 12px;
 }
-
 
 @media screen and (max-width: 1500px) {
   .inner-contact-section {
@@ -226,10 +409,11 @@ p {
     align-items: center;
   }
 
-  .map-wrapper .map-img-wrapper img{
+  .map-wrapper .map-img-wrapper img {
     width: 400px;
   }
-  .form-wrapper form input, .form-wrapper form textarea {
+  .form-wrapper form input,
+  .form-wrapper form textarea {
     height: 40px;
   }
   .form-wrapper form textarea {
@@ -238,18 +422,17 @@ p {
   ::placeholder {
     font-size: 12px;
   }
-  
+
   :-ms-input-placeholder {
     font-size: 12px;
   }
-  
+
   ::-ms-input-placeholder {
     font-size: 12px;
   }
   .address-text {
     text-align: center;
   }
-
 }
 
 @media screen and (max-width: 960px) {
@@ -291,21 +474,24 @@ p {
     flex-direction: column;
     align-items: flex-end;
   }
+  .share-location-modal  {
+    width: 400px;
+  }
 }
 
-
 @media screen and (max-width: 480px) {
-    .form-wrapper form input, .form-wrapper form textarea {
-        height: 40px;
-    }
+  .form-wrapper form input,
+  .form-wrapper form textarea {
+    height: 40px;
+  }
   .map-wrapper {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 
   .arabic-container .contact-section-wrapper {
-      padding-left: 20px;
-      padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .address-text {
@@ -319,11 +505,11 @@ p {
   ::placeholder {
     font-size: 12px;
   }
-  
+
   :-ms-input-placeholder {
     font-size: 12px;
   }
-  
+
   ::-ms-input-placeholder {
     font-size: 12px;
   }
@@ -331,10 +517,25 @@ p {
     font-size: 12px !important;
   }
   .contact-tools > div > span {
-      font-size: 12px;
+    font-size: 12px;
+  }
+  .share-location-modal  {
+    width: 300px;
+  }
+  .modal-header, .modal-body, .modal-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .modal-header h1 {
+    font-size: 14px;
+  }
+  .modal-body input {
+    width: 100%;
+  }
+  .modal-footer button {
+    font-size: 10px;
   }
 }
-
 
 /************************ARABIC VERSION******************************/
 .arabic-container .address-text {
@@ -348,7 +549,6 @@ p {
 .arabic-container .contact-section-wrapper {
   flex-direction: row-reverse;
 }
-
 
 @media screen and (max-width: 572px) {
   .arabic-container .contact-information {

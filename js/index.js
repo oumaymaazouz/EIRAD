@@ -21,3 +21,8 @@ hamburger.addEventListener('click', function() {
     menuOverlay.classList.toggle('isMenuOverlayActive');  
 });
   
+
+function handleShareLocationModalVisibility() {
+   document.querySelector('body').classList.toggle('body-with-opened-modal');
+   document.querySelector('.share-location-modal-overlay').classList.toggle('share-location-modal-overlay-visible');
+}

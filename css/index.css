@@ -39,6 +39,9 @@ body {
   font-family: "Verdana", serif;
   background-color: #f7f7f7;
 }
+.body-with-opened-modal {
+overflow: hidden;
+}
 .container {
   display: flex;
   flex-direction: column;
