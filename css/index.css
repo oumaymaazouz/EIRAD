@@ -233,9 +233,9 @@ body {
   justify-content: center;
 }
 
-/* .arabic-container .hero-section {
-  background-image: url(/images/homepage1.jpg);
-} */
+.home-hero-section h1 {
+  margin-bottom: 120px;
+}
 
 .container .hero-section > img {
   position: relative;
@@ -246,13 +246,11 @@ body {
 .container .hero-section h1 {
   font-size: 60px;
   font-weight: normal;
-  color: #f7f7f7;
+  color: #A27A01;
   padding-left: 140px;
 }
 
-.container .home-hero-section h1 {
-  color: #A27A01;
-}
+
 
 .globe-icon {
   width: 50px;
