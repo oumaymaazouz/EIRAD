@@ -65,7 +65,7 @@
             <li class="menu-list-item">
               <a href="/partnership.html">Group</a>
             </li>
-            <li class="menu-list-item">
+            <li class="menu-list-item selected-menu-list-item">
               <a href="/contact.html">Contact Us</a>
             </li>
           </ul>
@@ -163,66 +163,60 @@
       <div class="inner-contact-section-wrapper">
         <div class="inner-contact-section">
           <div class="contact-section-wrapper">
-            <div class="map-wrapper">
-              <!-- <div class="map-img-wrapper">
-                <img class="map-img" src="/images/eirad_map.png" alt="map" />
-              </div> -->
+            <p class="address-text">
+              Eirad Holding Company Ltd. <br />
+              King Fahad Branch, Al Olaya <br />
+              Riyadh, 12212 <br />
+              Saudi Arabia <br />
 
-              <p class="address-text">
-                Eirad Holding Company Ltd. <br />
-                King Fahad Branch, Al Olaya <br />
-                Riyadh, 12212 <br />
-                Saudi Arabia <br />
+              Location:
+              <a href="https://goo.gl/maps/fxFktJcP8AAfo4jaA" target="_blank"
+                >https://goo.gl/maps/fxFktJcP8AAfo4jaA</a
+              >
+            </p>
+            <div class="location-wrapper">
+              <button onclick="handleShareLocationModalVisibility()">
+                <span> SHARE LOCATION </span
+                ><i class="fa fa-share-alt" aria-hidden="true"></i>
+              </button>
+            </div>
 
-                Location:
-                <a href="https://goo.gl/maps/fxFktJcP8AAfo4jaA" target="_blank"
-                  >https://goo.gl/maps/fxFktJcP8AAfo4jaA</a
-                >
-              </p>
-              <div class="location-wrapper">
-                <button onclick="handleShareLocationModalVisibility()">
-                  <span> SHARE LOCATION </span
-                  ><i class="fa fa-share-alt" aria-hidden="true"></i>
-                </button>
-              </div>
-
-              <!-- this is a modal of sharing the location -->
-              <div class="share-location-modal-overlay">
-                <div class="share-location-modal">
-                  <div class="modal-header">
-                    <h1>Send EIRAD location via SMS</h1>
-                  </div>
-                  <div class="modal-body">
-                    <input
-                      value="https://goo.gl/maps/fxFktJcP8AAfo4jaA"
-                      disabled
-                    />
-                    <input type="text" placeholder="+966 *** ****" />
-                  </div>
-                  <div class="modal-footer">
-                    <button onclick="handleShareLocationModalVisibility()">
-                      CANCEL
-                    </button>
-                    <button onclick="handleShareLocationModalVisibility()">
-                      SEND
-                    </button>
-                  </div>
+            <!-- this is a modal of sharing the location -->
+            <div class="share-location-modal-overlay">
+              <div class="share-location-modal">
+                <div class="modal-header">
+                  <h1>Send EIRAD location via SMS</h1>
+                </div>
+                <div class="modal-body">
+                  <input
+                    value="https://goo.gl/maps/fxFktJcP8AAfo4jaA"
+                    disabled
+                  />
+                  <input type="text" placeholder="+966 *** ****" />
+                </div>
+                <div class="modal-footer">
+                  <button onclick="handleShareLocationModalVisibility()">
+                    CANCEL
+                  </button>
+                  <button onclick="handleShareLocationModalVisibility()">
+                    SEND
+                  </button>
                 </div>
               </div>
+            </div>
 
-              <div class="contact-tools">
-                <div>
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                  <span>+966 11 463 0630</span>
-                </div>
-                <div>
-                  <i class="fa fa-fax" aria-hidden="true"></i>
-                  <span>+966 11 463 2033</span>
-                </div>
-                <div>
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                  <span>info@eirad.com</span>
-                </div>
+            <div class="contact-tools">
+              <div>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+966 11 463 0630</span>
+              </div>
+              <div>
+                <i class="fa fa-fax" aria-hidden="true"></i>
+                <span>+966 11 463 2033</span>
+              </div>
+              <div>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>info@eirad.com</span>
               </div>
             </div>
           </div>

@@ -89,12 +89,19 @@ overflow: hidden;
 .menu-list-wrapper ul.menu-list li.menu-list-item span {
   text-decoration: none;
   font-size: 14px;
-  color: #12212f;
+  color: #6d7783;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
 }
 
+.selected-menu-list-item a,
+.selected-menu-list-item span {
+  color: #d29c01 !important;
+  font-weight: bold;
+  border-bottom: 2px solid #d29c01;
+  padding-bottom: 2px;
+}
 .underlined {
   border-bottom: 2px solid #d29c01;
   padding-bottom: 4px;
