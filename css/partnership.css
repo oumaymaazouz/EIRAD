@@ -179,7 +179,8 @@
   margin-left: 20px;
 }
 
-.ngmsa-group-details-modal-overlay {
+.ngmsa-group-details-modal-overlay,
+.eirad-group-details-modal-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -195,7 +196,8 @@
   -webkit-transition: opacity .5s ease-in-out;
 }
 
-.ngmsa-group-details-modal-overlay-visible {
+.ngmsa-group-details-modal-overlay-visible,
+.eirad-group-details-modal-overlay-visible {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,8 +205,8 @@
   opacity: 1;
 }
 
-.ngmsa-group-details-modal {
-  height: 600px;
+.ngmsa-group-details-modal,
+.eirad-group-details-modal {
   background-color: #f7f7f7;
   border-radius: 5px;
   display: flex;
@@ -243,7 +245,7 @@
 
 .modal-header {
   position: relative;
-  height: 20%;
+  height: 16%;
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
   flex-direction: column;
@@ -254,7 +256,7 @@
 }
 
 .modal-body-text {
-  width: 80%;
+  width: 84%;
 }
 
 .modal-body-text p {
@@ -275,6 +277,7 @@
   text-align: center;
   line-height: 34px;
   font-weight: bold;
+  padding: 20px;
 }
 
 .modal-body {
@@ -283,9 +286,7 @@
   align-items: center;
   display: flex;
   height: 80%;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  width: 100%;
+  margin: 40px;
 }
 
 .close-modal-btn {
