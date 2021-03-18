@@ -233,7 +233,7 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-  width: 50%;
+  width: 1000px;
 }
 
 .images-wrapper {
@@ -245,8 +245,6 @@
 .img-slide-item {
   position: relative;
   width: 33.33%;
-  height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -492,7 +490,16 @@ label {
   .partnership-cards-wrapper {
     justify-content: center;
   }
+  .ngmsa-group-details-modal,
+.eirad-group-details-modal,
+.ups-group-details-modal,
+.keir-group-details-modal,
+.fagerhult-group-details-modal {
+  width: 800px;
 }
+}
+
+
 
 @media screen and (max-width: 960px) {
   .partnership-cards-wrapper {
@@ -539,7 +546,43 @@ label {
   }
 }
 
+@media screen and (max-width: 860px) {
+  .ngmsa-group-details-modal,
+  .eirad-group-details-modal,
+  .ups-group-details-modal,
+  .keir-group-details-modal,
+  .fagerhult-group-details-modal {
+    width: 90%;
+    height: 90%;
+  }
+
+  .modal-body {
+    overflow-y: auto;
+    justify-content: flex-start;}
+
+  .img-slide-item {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .images-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
 @media screen and (max-width: 480px) {
+  .modal-header h1 {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .partnership-content h2 {
     font-size: 26px;
     padding-left: 20px;
