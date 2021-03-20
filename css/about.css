@@ -127,8 +127,8 @@
 }
 
 .director {
-  height: 200px;
-  width: 200px;
+  height: 160px;
+  width: 160px;
   background-color: white;
   border-radius: 50%;
   border: 1px solid #e2dedb;
@@ -208,9 +208,36 @@
 /* ---------------------RESPONSIVNESS-----------------------*/
 
 @media screen and (max-width: 1280px) {
+  .arabic-container .hero-section h1 {
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1048px) {
+  .restOfDirectorsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 960px) {
+  .arabic-container .hero-section h1 {
+    padding-right: 40px;
+  }
+  .arabic-container .custom-card h2 {
+    font-size: 28px;
+  }
+  .arabic-container .content-wrapper h3 {
+    font-size: 26px;
+  }
+  .director-wrapper {
+    width: 240px;
+    margin-right: 0px;
+  }
+  .director {
+    height: 140px;
+    width: 140px;
+  }
   #vision-and-purpose h2,
   .leadership-section h2 {
     font-size: 46px;
@@ -251,10 +278,32 @@
 }
 
 @media screen and (max-width: 775px) {
+}
 
+@media screen and (max-width: 600px) {
+  .arabic-container .custom-card h2 {
+    font-size: 24px;
+  }
+  .arabic-container .content-wrapper h3 {
+    font-size: 22px;
+  }
+
+  .director-description {
+    margin-top: 0px;
+    margin-bottom: 40px;
+
+    text-align: center;
+  }
+  .director-wrapper {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .content-wrapper p,
+  .leadership-section-ceo-message p {
+    padding-right: 0px;
+  }
   .custom-card {
     margin-top: 50px;
   }
@@ -266,10 +315,6 @@
   }
   .leadership-section h2 {
     margin-bottom: 20px;
-  }
-  .director {
-    height: 160px;
-    width: 160px;
   }
   .leadership-section {
     padding-top: 20px;
@@ -361,7 +406,7 @@
 }
 
 .arabic-container .name-and-position-wrapper .position {
-    font-size: 20px !important;
+  font-size: 20px !important;
 }
 
 .right-side {
@@ -370,59 +415,4 @@
   margin-left: 40px;
   margin-bottom: 20px;
   margin-top: 40px;
-}
-
-@media screen and (max-width: 1280px) {
-  .arabic-container .hero-section h1 {
-    padding-right: 100px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .arabic-container .hero-section h1 {
-    padding-right: 40px;
-  }
-  .arabic-container .custom-card h2 {
-    font-size: 28px;
-  }
-  .arabic-container .content-wrapper h3 {
-    font-size: 26px;
-  }
-  .director-wrapper {
-    width: 240px;
-    margin-right: 0px;
-  }
-  .director {
-    height: 160px;
-    width: 160px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .arabic-container .custom-card h2 {
-    font-size: 24px;
-  }
-  .arabic-container .content-wrapper h3 {
-    font-size: 22px;
-  }
-  .restOfDirectorsContainer {
-    flex-direction: column;
-    align-items: center;
-}
-.director-description {
-    margin-top: 0px;
-    margin-bottom: 40px;
-
-    text-align: center;
-
-  }
-  .director-wrapper {
-      margin-bottom: 0px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .content-wrapper p,
-  .leadership-section-ceo-message p {
-    padding-right: 0px;
-  }
 }

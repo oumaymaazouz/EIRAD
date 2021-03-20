@@ -92,6 +92,18 @@ vp_business_dev.addEventListener('click', function(e) {
 });
 
 
+const financial_consultant = document.getElementById("financial-consultant");
+financial_consultant.addEventListener('click', function(e) {
+    e.preventDefault();
+    myobj.set_selected('financial-consultant');
+    if(isMobile) {
+        manageVisibilityForMobile(financial_consultant)
+    } else {
+        manageVisibility(financial_consultant);
+    }
+});
+
+
 function closeMobileMenu() {
     let hamburger = document.querySelector('.hamburger');
     let menuOverlay = document.querySelector('.mobile-menu-overlay');
