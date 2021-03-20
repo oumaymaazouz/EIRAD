@@ -74,7 +74,11 @@
           </ul>
         </div>
         <div class="select-language-wrapper select-english-lang-wrapper">
-          <img class="globe-icon" src="/images/earth-grid-symbol.png" alt="globe" />
+          <img
+            class="globe-icon"
+            src="/images/earth-grid-symbol.png"
+            alt="globe"
+          />
           <a href="/index.html">English</a>
         </div>
       </div>
@@ -135,7 +139,11 @@
               <li
                 class="menu-list-item select-language-wrapper select-english-lang-wrapper"
               >
-              <img class="globe-icon" src="/images/earth-grid-symbol.png" alt="globe" />
+                <img
+                  class="globe-icon"
+                  src="/images/earth-grid-symbol.png"
+                  alt="globe"
+                />
                 <a href="/index.html">English</a>
               </li>
             </ul>
@@ -161,7 +169,8 @@
             <h2>المشاريع التجارية</h2>
             <h3>موجز عن أعمال وشراكات EIRAD</h3>
             <p>
-              لقد قمنا بتطوير شراكات، مشاريع خدمية ومشاريع مشتركة، كما قمنا أيضًا بتمويل شركات كبرى متعددة الجنسيات من جميع أنحاء العالم.
+              لقد قمنا بتطوير شراكات، مشاريع خدمية ومشاريع مشتركة، كما قمنا
+              أيضًا بتمويل شركات كبرى متعددة الجنسيات من جميع أنحاء العالم.
             </p>
             <div class="partnership-cards-wrapper">
               <!-- ************** 1 ************** -->
@@ -170,33 +179,81 @@
                   <img src="/images/NGMSA_logo.png" alt="mgmsa" />
                 </div>
                 <div class="partnership-card-body">
-                  <p class="card-title">
-                    NGMSA
-                  </p>
+                  <p class="card-title">NGMSA</p>
                   <p class="card-content">
-                    NGMSA: حلول أمنية متكاملة لحماية البنية التحتية الحرجة. <br>
-                    NGMSA هي شركة رائدة موثوق بها في مجال الدفاع والأمن ولها حضور كبير في المملكة العربية السعودية. 
+                    شركة الجيل الحديث العربية لنظم العمليات المحدودة (NGMSA)
                   </p>
-                  <p
-                    class="card-content-hidden-ngmsa animate__animated animate__fadeIn"
-                  >
-                  الحلول المقدمة هي على سبيل المثال لا الحصر:
-                  <br />
-                    *  أنظمة الأمن، الخدمات والدعم الفني لإلكترونيات الطيران، الفضاء وأنظمة المعلومات<br />
-                    *  حلول أمنية متكاملة <br />
-                    * تركيب الأنظمة، دمجها، إختبارها، تشغيلها وصيانتها <br />
-                    * التدريب والمساعدة الفنية لشبكات الإتصالات، أنظمة الطاقة والبنية التحتية للأنظمة المتكاملة
-                  </p>
-                  <button class="read-more read-more-ngmsa">المزيد</button>
                 </div>
-                <a
-                  href="https://www.ngmsa.com/"
-                  target="_blank"
+                <div
                   class="partnership-card-footer"
+                  onclick="handleDetailsModalVisibility('ngmsa')"
                 >
-                  <span>NGMSA</span>
+                  <span> المزيد</span>
                   <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
+                </div>
+
+                <!-- Details modal -->
+                <div class="ngmsa-group-details-modal-overlay">
+                  <div
+                    class="ngmsa-group-details-modal arabic-group-details-modal"
+                  >
+                    <button
+                      onclick="handleDetailsModalVisibility('ngmsa')"
+                      class="close-modal-btn"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    <div class="modal-header">
+                      <h1>
+                        شركة الجيل الحديث العربية لنظم العمليات المحدودة (NGMSA)
+                      </h1>
+                    </div>
+                    <div class="modal-body">
+                      <div class="images-wrapper">
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/ngmsa/ngmsa1.jpg"
+                            alt="ngmsa-photo-1"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/ngmsa/ngmsa2.jpg"
+                            alt="ngmsa-photo-2"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/ngmsa/ngmsa3.jpg"
+                            alt="ngmsa-photo-3"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-body-text">
+                        <p>
+                          حلول أمنية متكاملة لحماية البنية التحتية الحساسة، هي
+                          شركة رائدة موثوق بها في مجال الدفاع والأمن ولها حضور
+                          كبير في المملكة العربية السعودية. الحلول المقدمة هي
+                          على سبيل المثال لا الحصر:
+                          <br />
+                          * أنظمة الأمن، الخدمات والدعم الفني لإلكترونيات
+                          الطيران، الفضاء وأنظمة المعلومات الفضاء وأنظمة
+                          المعلومات<br />
+                          * حلول أمنية متكاملة <br />
+                          * تركيب الأنظمة، دمجها، اختبارها، تشغيلها وصيانتها<br />
+                          * التدريب والمساعدة الفنية لشبكات الإتصالات، أنظمة
+                          الطاقة والبنية التحتية للأنظمة المتكاملة
+                        </p>
+                      </div>
+                      <a
+                        href="https://www.ngmsa.com/"
+                        target="_blank"
+                        class="company-link"
+                        >https://www.ngmsa.com/</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- ************** 2 ************** -->
               <div class="partnership-card">
@@ -208,20 +265,68 @@
                   />
                 </div>
                 <div class="partnership-card-body">
-                  <p class="card-title">
-                    شركة Eirad الدولية للسفر والسياحة
-                  </p>
+                  <p class="card-title">شركة ايراد الدولية للسفر والسياحة</p>
                   <p class="card-content">
-                    شركة Eirad الدولية للسفر والسياحة هى شركة متخصصة في مجال السفر والسياحة.
+                    شركة ايراد الدولية للسفر والسياحة هى شركة متخصصة في مجال
+                    السفر والسياحة، تقدم خدماتها لكبار الشخصيات، بيوت الأعمال
+                    الكبرى، والمؤسسات الخاصة الكبيرة من خلال توفير خدمات سياحية
+                    متخصصة في جميع أنحاء العالم.
                   </p>
-                  <p
-                    class="card-content-hidden-eirad-travel animate__animated animate__fadeIn"
-                  >
-                  تقدم خدماتها لكبار الشخصيات، بيوت الأعمال الكبرى، والمؤسسات الخاصة الكبيرة من خلال توفير خدمات سياحية متخصصة في جميع أنحاء العالم.
-                  </p>
-                  <button class="read-more rm-eirad-travel">المزيد</button>
                 </div>
-                <div class="partnership-card-footer"></div>
+
+                <div
+                  class="partnership-card-footer"
+                  onclick="handleDetailsModalVisibility('eirad')"
+                >
+                  <span> المزيد</span>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+                <!-- Details modal: EIRAD Travel -->
+                <div class="eirad-group-details-modal-overlay">
+                  <div
+                    class="eirad-group-details-modal arabic-group-details-modal"
+                  >
+                    <button
+                      onclick="handleDetailsModalVisibility('eirad')"
+                      class="close-modal-btn"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    <div class="modal-header">
+                      <h1>شركة ايراد الدولية للسفر والسياحة</h1>
+                    </div>
+                    <div class="modal-body">
+                      <div class="images-wrapper">
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/Eirad Travel/Eirad Travel.jpg"
+                            alt="eirad-photo-1"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/Eirad Travel/Eirad Travel 2.jpg"
+                            alt="eirad-photo-2"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/Eirad Travel/Eirad Travel 3.jpg"
+                            alt="eirad-photo-3"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-body-text">
+                        <p>
+                          شركة ايراد الدولية للسفر والسياحة هى شركة متخصصة في
+                          مجال السفر والسياحة، تقدم خدماتها لكبار الشخصيات، بيوت
+                          الأعمال الكبرى، والمؤسسات الخاصة الكبيرة من خلال توفير
+                          خدمات سياحية متخصصة في جميع أنحاء العالم.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- ************** 3 ************** -->
               <div class="partnership-card">
@@ -230,40 +335,86 @@
                 </div>
                 <div class="partnership-card-body">
                   <p class="card-title">
-                    ETC / UPS المملكة العربية السعودية <br />
+                    شركة ايراد للتجارة والمقاولات المحدودة (ETC / UPS) <br />
                   </p>
                   <p class="card-content">
-                    الشحن السريع المتكامل والتوزيع وإدارة سلسلة التوريد.
-                    شركة Eirad المحدودة للتجارة والمقاولات (ETC) هي شركة سعودية مملوكة بالكامل. مقاول الخدمة المعتمد والحصري UPS 
-(United Parcel Service Inc.) من الولايات المتحدة الأمريكية في المملكة العربية السعودية منذ عام 1997
-
+                    شركة ايراد للتجارة والمقاولات المحدودة (ETC / UPS) وكيل
+                    خدمات "يو بي أس" المعتمد في المملكة العربية السعودية (الشحن
+                    السريع المتكامل والتوزيع وإدارة سلسلة التوريد)
                   </p>
-                  <p
-                    class="card-content-hidden-ups animate__animated animate__fadeIn"
-                  >
-                  تقدم ETC / UPS خدمة UPS Express، Domestic Express، وخدمة الشحن البري. تقدم ETC / UPS اليوم حلول التخزين، الخدمات اللوجستية، التوزيع والإستشارات لعملائها، مما يجعلها المزود الأول لخدمات الشحن السريع والتوزيع وسلسلة التوريد المتكاملة في المملكة العربية السعودية.
-                  <br />
-                  ملخص تاريخ ETC / UPS:
-                  <br />
-                    * تم منح الترخيص عام 1996 بعد عملية شاقة! <br />
-                    * بدأ العمل بالمملكة العربية السعودية في يناير 1997.
-                    <br />
-                    * بدأ برنامج  WW Exportsو Domestic في يوليو 1997.<br />
-                    * بدأت خدمات الإستيراد في أبريل 1998<br />
-                    * في التخليص الجمركي الداخلي بحلول يوليو 1999. <br />
-                    نمت ETC / UPS بشكل كبير في السنوات الخمس الماضية، وتغطي الآن ما يقرب من 95٪ من السوق المحلى، بالإضافة إلى 220 منطقة حول العالم. أنشأت ETC / UPS العديد من المنتجات والخدمات لتلبية الطلبات المتزايدة للأسواق المحلية والعالمية.
-
-                  </p>
-                  <button class="read-more read-more-ups">المزيد</button>
                 </div>
-                <a
-                  href="http://www.ups.com/sa"
-                  target="_blank"
+                <div
                   class="partnership-card-footer"
+                  onclick="handleDetailsModalVisibility('ups')"
                 >
-                  <span>UPS</span>
+                  <span>المزيد</span>
                   <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
+                </div>
+                <!-- Details modal: UPS -->
+                <div class="ups-group-details-modal-overlay">
+                  <div class="ups-group-details-modal arabic-group-details-modal">
+                    <button
+                      onclick="handleDetailsModalVisibility('ups')"
+                      class="close-modal-btn"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    <div class="modal-header">
+                      <h1>
+                        شركة ايراد للتجارة والمقاولات المحدودة (ETC / UPS)
+                      </h1>
+                    </div>
+                    <div class="modal-body">
+                      <div class="images-wrapper">
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/UPS/31.png"
+                            alt="ups-photo-1"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/UPS/DSC00559.JPG"
+                            alt="ups-photo-2"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/UPS/KFIA-Dammam.jpg"
+                            alt="ups-photo-3"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-body-text">
+                        <p>
+                          شركة ايراد للتجارة والمقاولات المحدودة (ETC / UPS)
+                          وكيل خدمات "يو بي أس" المعتمد في المملكة العربية
+                          السعودية (الشحن السريع المتكامل والتوزيع وإدارة سلسلة
+                          التوريد) شركة ايراد للتجارة والمقاولات وكيل خدمات يو
+                          بي اس المعتمد والحصري (United Parcel Service Inc.) في
+                          المملكة العربية السعودية منذ العام 1997م، حيث تقدم
+                          ايراد/يو بي اس بتقديم العديد من الخدمات بالمملكة (خدمة
+                          الشحن الدولي السريع، خدمة الشحن الداخلي السريع، خدمة
+                          الشحن البري الداخلي والدولي، حلول التخزين والخدمات
+                          اللوجستية، التوزيع والاستشارات لعملائها، مما يجعلها
+                          المزود الأول لخدمات الشحن السريع والتوزيع وسلسلة
+                          التوريد المتكاملة في المملكة العربية السعودية. نمت ETC
+                          / UPS بشكل كبير في السنوات الخمس الماضية، وتغطي الآن
+                          ما يقرب من 95٪ من السوق المحلى، بالإضافة إلى 220 منطقة
+                          حول العالم. أنشأت ايراد/يو بي اس العديد من المنتجات
+                          والخدمات لتلبية الطلبات المتزايدة للأسواق المحلية
+                          والعالمية والتجارة الالكترونية.
+                        </p>
+                      </div>
+                      <a
+                        href="http://www.ups.com/sa"
+                        target="_blank"
+                        class="company-link"
+                        >http://www.ups.com/sa</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- ************** 4 ************** -->
               <div class="partnership-card">
@@ -271,57 +422,150 @@
                   <img src="/images/keir-logo.png" alt="keir" />
                 </div>
                 <div class="partnership-card-body">
-                  <p class="card-title">Keir International</p>
+                  <p class="card-title">شركة كير الدولية</p>
                   <p class="card-content">
-                    Keir International هي شركة سعودية متخصصة في الصناعة تعمل مع شركاء إستراتيجيين، بائعين وحلفاء لتقديم حلول فعالة للعملاء في المنطقة. نحن متخصصون في الحلول الجاهزة في البنية التحتية المدنية، مشاريع تكنولوجيا المعلومات، الإتصالات، المشاريع الكهربائية، الأمن وإدارة المشاريع.
-
+                    شركة كير الدولية هي شركة سعودية متخصصة في الصناعة تعمل مع
+                    شركاء إستراتيجيين، بائعين وحلفاء لتقديم حلول فعالة للعملاء
+                    في المنطقة.
                   </p>
-                  <p
-                    class="card-content-hidden-keir animate__animated animate__fadeIn"
-                  >
-                  تزويد مزودي خدمات الإتصالات بالإمدادات المناسبة. تنفيذ المشاريع لشركات المرافق العامة من الألف إلى الياء. تركيب الألياف الضوئية في المجتمعات. ربط الطاقة بخدمات النقل والمساعدة في أمن الوزارات والقطاع الخاص. نحن نفخر بكل مشروع يُمنح لنا ونقوم به بدقة وتميز.
-                  <br />
-                  يتم الإستفادة من كفاءاتنا في العديد من الأسواق والقطاعات في المنطقة لتعزيز المشاريع والخدمات. نحن نخطط، نهندس، نبني، ننفذ وندير المشاريع التي تدفع الناس إلى المستقبل.
-                  
-                  </p>
-                  <button class="read-more read-more-keir">المزيد</button>
                 </div>
-                <a
-                  href="https://www.keir.com.sa/"
-                  target="_blank"
+                <div
                   class="partnership-card-footer"
+                  onclick="handleDetailsModalVisibility('keir')"
                 >
-                  <span>Keir</span>
+                  <span>المزيد</span>
                   <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
+                </div>
+                <!-- Details modal: KEIR -->
+                <div class="keir-group-details-modal-overlay">
+                  <div class="keir-group-details-modal arabic-group-details-modal">
+                    <button
+                      onclick="handleDetailsModalVisibility('keir')"
+                      class="close-modal-btn"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    <div class="modal-header">
+                      <h1>شركة كير الدولية</h1>
+                    </div>
+                    <div class="modal-body">
+                      <div class="images-wrapper">
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/Keir/electrical power.jpg"
+                            alt="KEIR-photo-1"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/Keir/fiber optic.jpg"
+                            alt="keir-photo-2"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/Keir/power-works.jpg"
+                            alt="keir-photo-3"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-body-text">
+                        <p>
+                          شركة كير الدولية هي شركة سعودية متخصصة في الصناعة تعمل
+                          مع شركاء إستراتيجيين، بائعين وحلفاء لتقديم حلول فعالة
+                          للعملاء في المنطقة. نحن متخصصون في الحلول الجاهزة في
+                          البنية التحتية المدنية، مشاريع تكنولوجيا المعلومات،
+                          الإتصالات، المشاريع الكهربائية، الأمن وإدارة المشاريع.
+                          تزويد مزودي خدمات الإتصالات بالإمدادات المناسبة. تنفيذ
+                          المشاريع لشركات المرافق العامة من الألف إلى الياء.
+                          تركيب الألياف الضوئية في المجتمعات. ربط الطاقة بخدمات
+                          النقل والمساعدة في أمن الوزارات والقطاع الخاص. نحن
+                          نفخر بكل مشروع يُمنح لنا ونقوم به بدقة وتميز. يتم
+                          الإستفادة من كفاءاتنا في العديد من الأسواق والقطاعات
+                          في المنطقة لتعزيز المشاريع والخدمات. نحن نخطط، نهندس،
+                          نبني، ننفذ وندير المشاريع التي تدفع الناس إلى
+                          المستقبل.
+                        </p>
+                      </div>
+                      <a
+                        href="https://www.keir.com.sa/"
+                        target="_blank"
+                        class="company-link"
+                        >https://www.keir.com.sa/</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- ************** 5 ************** -->
               <div class="partnership-card">
                 <div class="partnership-card-header">
-                  <span class="partner-name"> SAS Brokerage </span>
+                  <span class="partner-name"> فاجرهولت</span>
                 </div>
                 <div class="partnership-card-body">
-                  <p class="card-title">SAS BROKERAGE</p>
+                  <p class="card-title">فاجرهولت</p>
                   <p class="card-content">
-                    تم تشكيلها في البداية لدعم عمليات وأنشطة التخليص الجمركي لـ UPS داخل المملكة، ثم بدأت SAS Brokerage في خدمة الشركات الأخرى والشركاء في شركة Eirad القابضة وتطورت بسرعة لتصبح وحدة أعمال ذاتية تخدم العملاء الخارجيين.
-
+                    تقوم فاجرهولت بتطوير وتصنيع أنظمة الإضاءة الاحترافية
+                    الداخلية والخارجية للحفاظ على البيئة العامة. بفضل معرفتنا
+                    القوية بالإضاءة لأكثر من 75 عامًا.
                   </p>
-                  <p
-                    class="card-content-hidden-sas animate__animated animate__fadeIn"
-                  >
-                  تُعد SAS اليوم شركة مستقلة تابعة لشركة Eirad وتقوم بالأنشطة التالية:
-                  <br />
-                    1. التخليص الجمركي للشحنات السريعة والبضائع<br />
-                    2. التخليص الجمركي لجميع البضائع البرية والبحرية والجوية.<br />
-                    3.  فريق متخصص للتعامل مع جميع شحنات الإستيراد للكمية اليومية<br />
-                    4.  متوفرة بثلاثة منافذ دخول (جدة، الرياض، الدمام - جسر الملك فهد) <br />
-                    5.  التشاور حول الوثائق والمتطلبات للتصدير والإستيراد
-                    <br />
-                    6. المساعدة في الإجراءات المحلية لتسريع عملية التخليص<br />
-                  </p>
-                  <button class="read-more read-more-sas">المزيد</button>
                 </div>
-                <div class="partnership-card-footer"></div>
+                <div
+                  class="partnership-card-footer"
+                  onclick="handleDetailsModalVisibility('fagerhult')"
+                >
+                  <span>المزيد</span>
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+                <!-- Details modal: fagerhult -->
+                <div class="fagerhult-group-details-modal-overlay">
+                  <div class="fagerhult-group-details-modal arabic-group-details-modal">
+                    <button
+                      onclick="handleDetailsModalVisibility('fagerhult')"
+                      class="close-modal-btn"
+                    >
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    <div class="modal-header">
+                      <h1>Fagerhult</h1>
+                    </div>
+                    <div class="modal-body">
+                      <div class="images-wrapper">
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/Fagerhult/fagerhult1.jpg"
+                            alt="Fagerhult-photo-1"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/Fagerhult/fagerhult2.jpg"
+                            alt="Fagerhult-photo-2"
+                          />
+                        </div>
+                        <div class="img-slide-item">
+                          <img
+                            src="/images/Companies/Fagerhult/fagerhult4.jpg"
+                            alt="Fagerhult-photo-3"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-body-text">
+                        <p>
+                          تقوم فاجرهولت بتطوير وتصنيع أنظمة الإضاءة الاحترافية
+                          الداخلية والخارجية للحفاظ على البيئة العامة. بفضل
+                          معرفتنا القوية بالإضاءة لأكثر من 75 عامًا.
+                        </p>
+                      </div>
+                      <a
+                        href="https://www.fagerhult.com/"
+                        target="_blank"
+                        class="company-link"
+                        >https://www.fagerhult.com/</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -336,5 +580,5 @@
     </div>
   </body>
   <script src="/js/index.js"></script>
-  <script type="text/javascript" src="/js/partnership-arabic.js"></script>
+  <script type="text/javascript" src="/js/partnership.js"></script>
 </html>
