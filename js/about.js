@@ -104,6 +104,18 @@ financial_consultant.addEventListener('click', function(e) {
 });
 
 
+const country_manager = document.getElementById("country-manager");
+country_manager.addEventListener('click', function(e) {
+    e.preventDefault();
+    myobj.set_selected('country-manager');
+    if(isMobile) {
+        manageVisibilityForMobile(country_manager)
+    } else {
+        manageVisibility(country_manager);
+    }
+});
+
+
 function closeMobileMenu() {
     let hamburger = document.querySelector('.hamburger');
     let menuOverlay = document.querySelector('.mobile-menu-overlay');
