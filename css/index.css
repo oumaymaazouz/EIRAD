@@ -39,6 +39,7 @@ body {
   font-family: "Verdana", serif;
   background-color: #f7f7f7;
 }
+
 .body-with-opened-modal {
   overflow: hidden;
 }
@@ -1106,4 +1107,9 @@ body {
     padding-right: 20px;
     font-size: 70px;
   }
+}
+
+
+.animate__animated.animate__fadeIn{
+  --animate-duration: 500ms;
 }
