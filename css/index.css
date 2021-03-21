@@ -55,6 +55,11 @@ body {
   background-color: #f7f7f7;
   display: flex;
   padding: 20px 140px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  width: 100%;
 }
 
 .arabic-container .menu {
@@ -252,6 +257,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 140px;
 }
 
 .home-hero-section h1 {
@@ -572,6 +578,9 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+  .container .hero-section {
+    margin-top: 0px;
+  }
   .custom-card {
     margin-bottom: 20px;
   }
