@@ -165,6 +165,7 @@
   letter-spacing: 1px;
   line-height: 24px;
   font-weight: bold;
+  text-align: center;
 }
 
 .director-description {
@@ -197,12 +198,26 @@
   color: #6d7783 !important;
 }
 
-.left-side {
-  float: left;
-  padding: 1%;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  margin-top: 40px;
+.inner-ceo-message-wrapper {
+  display: flex;
+}
+
+.director-avatar-container {
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.director-avatar-container .director {
+  height: 220px;
+  width: 220px;
+}
+
+.chairman-msg {
+  position: relative;
+  width: 70%;
 }
 
 /* ---------------------RESPONSIVNESS-----------------------*/
@@ -221,6 +236,25 @@
 }
 
 @media screen and (max-width: 960px) {
+  .inner-ceo-message-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.director-avatar-container .director {
+  height: 200px;
+  width: 200px;
+}
+.chairman-msg {
+  position: relative;
+  width: 100%;
+}
+.director-avatar-container {
+  margin-top: 40px;
+    margin-bottom: 20px;
+}
   .arabic-container .hero-section h1 {
     padding-right: 40px;
   }
@@ -281,6 +315,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .director-avatar-container .director {
+    height: 160px;
+    width: 160px;
+}
   .arabic-container .custom-card h2 {
     font-size: 24px;
   }

@@ -292,6 +292,9 @@ body {
   letter-spacing: 1px;
   line-height: 24px;
   margin-top: 26px;
+  text-align: justify;
+  /* text-align-last: justify;
+  word-spacing: 16px; */
 }
 
 .area-with-text-overlay {
@@ -992,8 +995,8 @@ body {
 }
 
 .arabic-container .custom-card p {
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 32px;
 }
 
 .arabic-menu-list-wrapper {

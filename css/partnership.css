@@ -101,10 +101,10 @@
 
 .partnership-card-body p.card-title {
   color: #6d7783;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 1px;
-  text-align: justify;
+  text-align: center;
   justify-content: center;
   min-height: 50px;
   align-items: center;
@@ -116,6 +116,7 @@
   line-height: 24px;
   margin-top: 20px;
   text-align: justify;
+  word-break: break-all;
 }
 
 .partnership-card-body > p {
@@ -636,10 +637,14 @@ label {
 }
 .arabic-container .partnership-card-body p.card-content {
   font-size: 20px;
+  word-break: normal;
+  word-spacing: -4px;
 }
 
 .arabic-container .partnership-card-body p.card-title {
-  font-size: 26px;
+  font-size: 22px;
+  text-align: center;
+  word-spacing: normal;
 }
 
 .arabic-container .card-content-hidden-ngmsa,
