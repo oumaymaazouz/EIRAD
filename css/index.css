@@ -1028,6 +1028,10 @@ body {
   justify-content: flex-end;
 }
 
+.arabic-container .select-language-wrapper {
+  justify-content: flex-start;
+}
+
 .arabic-container .hero-section h1 {
   padding-right: 200px;
   padding-left: 0px;

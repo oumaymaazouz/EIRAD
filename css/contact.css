@@ -11,12 +11,13 @@
 }
 .inner-contact-section {
   position: relative;
-  height: 100%;
+  height: 40vh;
   width: 100%;
   padding-left: 200px;
   padding-right: 200px;
   margin-top: 40px;
   margin-bottom: 40px;
+  display: flex;
 }
 
 .footer {
@@ -97,9 +98,28 @@ p {
 }
 
 .contact-section-wrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+.map-image-wrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.map-image-wrapper img {
+  width: 100%;
+}
 .contact-information {
   display: flex;
   justify-content: space-between;
@@ -371,9 +391,6 @@ padding-right: 0px;
 }
 
 @media screen and (max-width: 1366px) {
-  .contact-section-wrapper {
-    flex-direction: column-reverse !important;
-  }
 
   .form-wrapper {
     width: 100%;
@@ -398,9 +415,6 @@ padding-right: 0px;
   ::-ms-input-placeholder {
     font-size: 12px;
   }
-  .address-text {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 960px) {
@@ -408,8 +422,28 @@ padding-right: 0px;
     padding-top: 0px;
     padding-left: 40px;
     padding-right: 40px;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-section-wrapper {
+    position: relative;
+    height: 50%;
+    width: 80%;
+
   }
 
+  .map-image-wrapper {
+    position: relative;
+    height: 50%;
+    width: 100%;
+  }
+  .map-image-wrapper img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+  }
   .btn-submit-wrapper {
     align-items: center;
   }
@@ -428,6 +462,7 @@ padding-right: 0px;
   .inner-contact-section {
     padding-left: 0px;
     padding-right: 0px;
+    height: 80vh;
   }
   .form-wrapper {
     padding-left: 10px;
