@@ -379,6 +379,18 @@
   color: #6d7783;
 }
 
+.modal-body-list p {
+  margin-top: 10px;
+}
+
+.modal-body-list {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.modal-body-list ::marker {
+  color: #6d7783;
+}
 .modal-footer button:focus {
   outline: none;
 }
