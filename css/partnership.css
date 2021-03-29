@@ -296,6 +296,7 @@
 .modal-body-text {
   position: relative;
   width: 90%;
+  margin-top: 26px;
 }
 
 .modal-body-text p {

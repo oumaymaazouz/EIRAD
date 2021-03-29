@@ -4,6 +4,7 @@
     <title>EIRAD GROUP</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="icon"
       href="/images/cropped-eirad-favicon-32x32.png"
@@ -29,18 +30,7 @@
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/vision.css" />
     <link rel="stylesheet" href="/css/partnership.css" />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <!-- Add the slick-theme.css if you want default styling -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
+    <link rel="stylesheet" href="/css/slider.css" />
   </head>
   <body>
     <div class="container">
@@ -226,24 +216,43 @@
                       </h1>
                     </div>
                     <div class="modal-body">
-                      <div class="images-wrapper">
-                        <div class="img-slide-item">
-                          <img
-                            src="/images/Companies/ngmsa/ngmsa1.jpg"
-                            alt="ngmsa-photo-1"
-                          />
-                        </div>
-                        <div class="img-slide-item">
-                          <img
-                            src="/images/Companies/ngmsa/ngmsa2.jpg"
-                            alt="ngmsa-photo-2"
-                          />
-                        </div>
-                        <div class="img-slide-item">
-                          <img
-                            src="/images/Companies/ngmsa/ngmsa3.jpg"
-                            alt="ngmsa-photo-3"
-                          />
+                      <div class="slider">
+                        <div class="slides">
+                          <!-- radio buttons start-->
+                          <input type="radio" name="radio-btn" id="radio1" />
+                          <input type="radio" name="radio-btn" id="radio2" />
+                          <input type="radio" name="radio-btn" id="radio3" />
+                          <!-- radio buttons end-->
+
+                          <!-- slide images start-->
+                          <div class="slide first">
+                            <img src="/images/Companies/ngmsa/ngmsa1.jpg" />
+                          </div>
+
+                          <div class="slide">
+                            <img src="/images/Companies/ngmsa/ngmsa2.jpg" />
+                          </div>
+
+                          <div class="slide">
+                            <img src="/images/Companies/ngmsa/ngmsa3.jpg" />
+                          </div>
+                          <!-- slide images end-->
+
+                          <!-- automatic navigation images start-->
+                          <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                          </div>
+                          <!-- automatic navigation images end-->
+
+                          <!-- automatic navigation manual start-->
+                          <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                          </div>
+                          <!-- automatic navigation manual end-->
                         </div>
                       </div>
                       <div class="modal-body-text">
@@ -634,21 +643,15 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
     <script type="text/javascript">
-      $(document).ready(function () {
-        $(".my-slick").slick({
-          dots: true,
-          arrows: false,
-          autoplay: true,
-          //autoplaySpeed: 1000,
-        });
-
-        //setTimeout(() => { $('.my-slick').slick('refresh'); }, 100);
-      });
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 3) {
+          counter = 1;
+        }
+      }, 3000);
     </script>
   </body>
 </html>
