@@ -27,10 +27,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/slick/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/slick/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/vision.css" />
     <link rel="stylesheet" href="/css/partnership.css" />
-    <link rel="stylesheet" href="/css/slider.css" />
+    <!-- <link rel="stylesheet" href="/css/slider.css" /> -->
   </head>
   <body>
     <div class="container">
@@ -216,43 +226,24 @@
                       </h1>
                     </div>
                     <div class="modal-body">
-                      <div class="slider">
-                        <div class="slides">
-                          <!-- radio buttons start-->
-                          <input type="radio" name="radio-btn" id="radio1" />
-                          <input type="radio" name="radio-btn" id="radio2" />
-                          <input type="radio" name="radio-btn" id="radio3" />
-                          <!-- radio buttons end-->
-
-                          <!-- slide images start-->
-                          <div class="slide first">
-                            <img src="/images/Companies/ngmsa/ngmsa1.jpg" />
-                          </div>
-
-                          <div class="slide">
-                            <img src="/images/Companies/ngmsa/ngmsa2.jpg" />
-                          </div>
-
-                          <div class="slide">
-                            <img src="/images/Companies/ngmsa/ngmsa3.jpg" />
-                          </div>
-                          <!-- slide images end-->
-
-                          <!-- automatic navigation images start-->
-                          <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                          </div>
-                          <!-- automatic navigation images end-->
-
-                          <!-- automatic navigation manual start-->
-                          <div class="navigation-manual">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
-                          </div>
-                          <!-- automatic navigation manual end-->
+                      <div class="my-slider for_slick_slider">
+                        <div class="slider-item">
+                          <img
+                            src="/images/Companies/ngmsa/ngmsa1.jpg"
+                            alt="ngmsa-1"
+                          />
+                        </div>
+                        <div class="slider-item">
+                          <img
+                            src="/images/Companies/ngmsa/ngmsa2.jpg"
+                            alt="ngmsa-2"
+                          />
+                        </div>
+                        <div class="slider-item">
+                          <img
+                            src="/images/Companies/ngmsa/ngmsa3.jpg"
+                            alt="ngmsa-3"
+                          />
                         </div>
                       </div>
                       <div class="modal-body-text">
@@ -286,15 +277,13 @@
                         </ul>
                         <div class="company-link-wrapper">
                           <a
-                          href="https://www.ngmsa.com/"
-                          target="_blank"
-                          class="company-link"
-                          >https://www.ngmsa.com/</a
-                        >
+                            href="https://www.ngmsa.com/"
+                            target="_blank"
+                            class="company-link"
+                            >https://www.ngmsa.com/</a
+                          >
                         </div>
-                
                       </div>
-                     
                     </div>
                   </div>
                 </div>
@@ -338,20 +327,20 @@
                       <h1>Eirad International Travel and Tourism Co</h1>
                     </div>
                     <div class="modal-body">
-                      <div class="images-wrapper">
-                        <div class="img-slide-item">
+                      <div class="my-slider for_slick_slider">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/Eirad Travel/Eirad Travel.jpg"
                             alt="eirad-photo-1"
                           />
                         </div>
-                        <div class="img-slide-item">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/Eirad Travel/Eirad Travel 2.jpg"
                             alt="eirad-photo-2"
                           />
                         </div>
-                        <div class="img-slide-item">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/Eirad Travel/Eirad Travel 3.jpg"
                             alt="eirad-photo-3"
@@ -409,26 +398,27 @@
                       </h1>
                     </div>
                     <div class="modal-body">
-                      <div class="images-wrapper">
-                        <div class="img-slide-item">
+                      <div class="my-slider for_slick_slider">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/UPS/31.png"
                             alt="ups-photo-1"
                           />
                         </div>
-                        <div class="img-slide-item">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/UPS/DSC00559.JPG"
                             alt="ups-photo-2"
                           />
                         </div>
-                        <div class="img-slide-item">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/UPS/KFIA-Dammam.jpg"
                             alt="ups-photo-3"
                           />
                         </div>
                       </div>
+
                       <div class="modal-body-text">
                         <p>
                           Eirad Trading & Contracting Co. Ltd (ETC) is a
@@ -451,13 +441,15 @@
                           products and services that meets the growing demand of
                           the local markets.
                         </p>
+                        <div class="company-link-wrapper">
+                          <a
+                            href="http://www.ups.com/sa"
+                            target="_blank"
+                            class="company-link"
+                            >http://www.ups.com/sa</a
+                          >
+                        </div>
                       </div>
-                      <a
-                        href="http://www.ups.com/sa"
-                        target="_blank"
-                        class="company-link"
-                        >http://www.ups.com/sa</a
-                      >
                     </div>
                   </div>
                 </div>
@@ -497,26 +489,27 @@
                       <h1>Keir International</h1>
                     </div>
                     <div class="modal-body">
-                      <div class="images-wrapper">
-                        <div class="img-slide-item">
+                      <div class="my-slider for_slick_slider">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/Keir/electrical power.jpg"
                             alt="KEIR-photo-1"
                           />
                         </div>
-                        <div class="img-slide-item">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/Keir/fiber optic.jpg"
                             alt="keir-photo-2"
                           />
                         </div>
-                        <div class="img-slide-item">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/Keir/power-works.jpg"
                             alt="keir-photo-3"
                           />
                         </div>
                       </div>
+
                       <div class="modal-body-text">
                         <p>
                           Keir International is a Saudi Arabian company of
@@ -540,13 +533,15 @@
                           implement and manage projects that move people forward
                           into the future.
                         </p>
+                        <div class="company-link-wrapper">
+                          <a
+                            href="https://www.keir.com.sa/"
+                            target="_blank"
+                            class="company-link"
+                            >https://www.keir.com.sa/</a
+                          >
+                        </div>
                       </div>
-                      <a
-                        href="https://www.keir.com.sa/"
-                        target="_blank"
-                        class="company-link"
-                        >https://www.keir.com.sa/</a
-                      >
                     </div>
                   </div>
                 </div>
@@ -586,26 +581,27 @@
                       <h1>Fagerhult</h1>
                     </div>
                     <div class="modal-body">
-                      <div class="images-wrapper">
-                        <div class="img-slide-item">
+                      <div class="my-slider for_slick_slider">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/Fagerhult/fagerhult1.jpg"
                             alt="Fagerhult-photo-1"
                           />
                         </div>
-                        <div class="img-slide-item">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/Fagerhult/fagerhult2.jpg"
                             alt="Fagerhult-photo-2"
                           />
                         </div>
-                        <div class="img-slide-item">
+                        <div class="slider-item">
                           <img
                             src="/images/Companies/Fagerhult/fagerhult4.jpg"
                             alt="Fagerhult-photo-3"
                           />
                         </div>
                       </div>
+
                       <div class="modal-body-text">
                         <p>
                           Fagerhult develops and manufactures professional
@@ -614,13 +610,15 @@
                           75 years and our wide range, you get a partner for the
                           entire project.
                         </p>
+                        <div class="company-link-wrapper">
+                          <a
+                            href="https://www.fagerhult.com/"
+                            target="_blank"
+                            class="company-link"
+                            >https://www.fagerhult.com/</a
+                          >
+                        </div>
                       </div>
-                      <a
-                        href="https://www.fagerhult.com/"
-                        target="_blank"
-                        class="company-link"
-                        >https://www.fagerhult.com/</a
-                      >
                     </div>
                   </div>
                 </div>
@@ -647,7 +645,11 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
-    <script type="text/javascript">
+    <script
+      type="text/javascript"
+      src="/assets/slick/slick/slick.min.js"
+    ></script>
+    <!-- <script type="text/javascript">
       var counter = 1;
       setInterval(function () {
         document.getElementById("radio" + counter).checked = true;
@@ -656,6 +658,31 @@
           counter = 1;
         }
       }, 3000);
+    </script> -->
+    <script>
+      $(document).ready(function () {
+        $(".my-slider").slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          responsive: [
+            {
+              breakpoint: 1175,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                centerMode: false,
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
     </script>
   </body>
 </html>
