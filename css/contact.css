@@ -187,9 +187,9 @@ p {
   background-color: rgb(0 0 0 / 62%);
   z-index: 1000;
   opacity: 0;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
 }
 
 .share-location-modal-overlay-visible {
@@ -212,9 +212,9 @@ p {
 }
 
 .share-location-modal-arabic .modal-header,
-.share-location-modal-arabic .modal-body{
-padding-left: 0px;
-padding-right: 40px;
+.share-location-modal-arabic .modal-body {
+  padding-left: 0px;
+  padding-right: 40px;
 }
 
 .share-location-modal-arabic .modal-header h1 {
@@ -240,7 +240,7 @@ padding-right: 40px;
 
 .share-location-modal-arabic .modal-footer {
   padding-left: 40px;
-padding-right: 0px;
+  padding-right: 0px;
 }
 .modal-header {
   position: relative;
@@ -376,6 +376,23 @@ padding-right: 0px;
   font-size: 12px;
 }
 
+.input-map-wrapper {
+  width: 100%;
+}
+
+.input-map-wrapper .fa {
+  color: #6d7783;
+}
+.clone-btn {
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.clone-btn:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 1500px) {
   .inner-contact-section {
     padding-left: 200px;
@@ -391,7 +408,6 @@ padding-right: 0px;
 }
 
 @media screen and (max-width: 1366px) {
-
   .form-wrapper {
     width: 100%;
     padding: 0;
@@ -431,7 +447,6 @@ padding-right: 0px;
     position: relative;
     height: 50%;
     width: 80%;
-
   }
 
   .map-image-wrapper {
@@ -455,7 +470,6 @@ padding-right: 0px;
   .btn-submit {
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 572px) {
@@ -472,7 +486,7 @@ padding-right: 0px;
     flex-direction: column;
     align-items: flex-end;
   }
-  .share-location-modal  {
+  .share-location-modal {
     width: 400px;
   }
 }
@@ -513,10 +527,12 @@ padding-right: 0px;
   .contact-tools > div > span {
     font-size: 12px;
   }
-  .share-location-modal  {
+  .share-location-modal {
     width: 300px;
   }
-  .modal-header, .modal-body, .modal-footer {
+  .modal-header,
+  .modal-body,
+  .modal-footer {
     padding-left: 10px;
     padding-right: 10px;
   }

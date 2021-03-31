@@ -187,10 +187,15 @@
                   <h1>Send EIRAD location via SMS</h1>
                 </div>
                 <div class="modal-body">
-                  <input
-                    value="https://goo.gl/maps/fxFktJcP8AAfo4jaA"
-                    disabled
-                  />
+                  <div class="input-map-wrapper">
+                    <input
+                      id="map-input-en"
+                      value="https://goo.gl/maps/fxFktJcP8AAfo4jaA"
+                    />
+                    <button class="clone-btn" onclick="copy('map-input-en')">
+                      <i class="fa fa-clone" aria-hidden="true"></i>
+                    </button>
+                  </div>
                   <input type="text" placeholder="+966 *** ****" />
                 </div>
                 <div class="modal-footer">

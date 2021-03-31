@@ -23,9 +23,9 @@
       href="/css/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/contact.css" />
   </head>
@@ -178,17 +178,25 @@
               </button>
             </div>
             <!-- this is a modal of sharing the location -->
-            <div class="share-location-modal-overlay animate__animated animate__fadeIn">
+            <div
+              class="share-location-modal-overlay animate__animated animate__fadeIn"
+            >
               <div class="share-location-modal share-location-modal-arabic">
                 <div class="modal-header">
                   <h1>مشاركة الموقع عبر الرسائل القصيرة</h1>
                 </div>
                 <div class="modal-body">
-                  <input
-                    value="https://goo.gl/maps/fxFktJcP8AAfo4jaA"
-                    disabled
-                  />
-                  <input type="text" placeholder="" />
+                  <div class="input-map-wrapper">
+                    <input
+                      id="map-input-ar"
+                      value="https://goo.gl/maps/fxFktJcP8AAfo4jaA"
+                    />
+                    <button class="clone-btn" onclick="copy('map-input-ar')">
+                      <i class="fa fa-clone" aria-hidden="true"></i>
+                    </button>
+                  </div>
+
+                  <input type="text" placeholder="  ****  ***  ٩٦٦+ " />
                 </div>
                 <div class="modal-footer">
                   <button onclick="handleShareLocationModalVisibility()">
