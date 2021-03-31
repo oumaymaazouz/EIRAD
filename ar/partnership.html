@@ -635,10 +635,14 @@
   <script>
     $(document).ready(function () {
       $(".my-slider").slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         centerMode: true,
+        arrows: false,
+        dots: true,
         responsive: [
           {
             breakpoint: 1175,
