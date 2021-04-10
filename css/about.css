@@ -182,7 +182,11 @@
   display: block;
   width: 80%;
   margin-top: 60px;
+  margin-right: 50px;
+  margin-left: 40px;
 }
+
+
 
 .selected-director {
   transform: scale(1.1);
@@ -222,9 +226,21 @@
 
 /* ---------------------RESPONSIVNESS-----------------------*/
 
+@media screen and (max-width: 1642px){
+  .visible {
+    margin-right: 42px;
+    margin-left: 42px;
+  }
+
+}
+
 @media screen and (max-width: 1280px) {
   .arabic-container .hero-section h1 {
     padding-right: 100px;
+  }
+  .visible {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
